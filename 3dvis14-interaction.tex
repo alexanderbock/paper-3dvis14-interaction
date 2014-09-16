@@ -40,20 +40,20 @@
 %% with other math-related packages, you may want to disable it.
 
 %% This turns references into clickable hyperlinks.
-\usepackage[bookmarks,backref=true,linkcolor=black]{hyperref} %,colorlinks
-\hypersetup{
-  pdfauthor = {},
-  pdftitle = {},
-  pdfsubject = {},
-  pdfkeywords = {},
-  colorlinks=true,
-  linkcolor= black,
-  citecolor= black,
-  pageanchor=true,
-  urlcolor = black,
-  plainpages = false,
-  linktocpage
-}
+%%\usepackage[bookmarks,backref=true,linkcolor=black]{hyperref} %,colorlinks
+%%\hypersetup{
+%%  pdfauthor = {},
+%%  pdftitle = {},
+%%  pdfsubject = {},
+%%  pdfkeywords = {},
+%%  colorlinks=true,
+%%  linkcolor= black,
+%%  citecolor= black,
+%%  pageanchor=true,
+%%  urlcolor = black,
+%%  plainpages = false,
+%%  linktocpage
+%%}
 
 %% If you are submitting a paper to a conference for review with a double
 %% blind reviewing process, please replace the value ``0'' below with your
@@ -71,7 +71,7 @@
 
 %% Paper title.
 
-\title{Touch vs 3D interaction in a medical environment}
+\title{Hands-only 2D vs 3D interaction for exploring volume data}
 
 %% This is how authors are specified in the journal style
 
@@ -86,16 +86,16 @@
 
 
 %other entries to be set up for journal
-\shortauthortitle{Sund\'en \MakeLowercase{\textit{et al.}}: Touch vs 3D interaction in a medical environment}
+\shortauthortitle{Sund\'en \MakeLowercase{\textit{et al.}}: Hands-only 2D vs 3D interaction}
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
-\abstract{....
+\abstract{....Touchless 3D interaction (kinect) vs touch screen 2D interaction....different scenarios such as slicing, clipping, zooming in 2D and 3D visualization of medical volume data.
 } % end of abstract
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
 %% please capitalize first letter and insert punctuation after last keyword
-\keywords{interaction, touch display, tracking}
+\keywords{interaction, volume data, touch display, kinect}
 
 %% ACM Computing Classification System (CCS). 
 %% See <http://www.acm.org/class/1998/> for details.
@@ -134,6 +134,8 @@
 
 \section{Introduction}\label{sec:introduction}
 
+Using an object such as a mouse, can be useful both in 2D and 3D movements but often offer unnatural ways of exploring the scientific data, as the hands or not directly interacting with the visualization of the data.
+
 ....
 
 
@@ -141,6 +143,15 @@
 
 ....
 
+Autopsy Table \cite{LRFPY11}
+
+Kinect dicom \cite{zora82163}
+
+Kinect operation \cite{OHaraGSPVMCCRDC14}
+
+Gestures vs. Postures \cite{isenberg:hal-00781237}
+
+Interactive Slice WIM \cite{Coffey:2012:ISW:2360744.2360843}
 
 \section{Results}\label{sec:results}
 
@@ -149,9 +160,6 @@
 \section{Conclusions \& Future Work}\label{sec:conclusion}
 
 ....
-
-%% if specified like this the section will be committed in review mode
-\acknowledgments{}
 
 \bibliographystyle{abbrv}
 %%use following if all content of bibtex file should be shown
