@@ -71,7 +71,7 @@
 
 %% Paper title.
 
-\title{Hands-only 2D vs 3D interaction for exploring volumetric data in various scenarios}
+\title{Hands-only 2D vs 3D interaction for volume exploration in user-centered and viewer-centered scenarios}
 
 %% This is how authors are specified in the journal style
 
@@ -90,7 +90,10 @@
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
-\abstract{....Touchless 3D interaction (kinect) vs touch screen 2D interaction....different scenarios such as slicing, clipping, zooming in 2D and 3D visualization of medical volume data.
+\abstract{
+Key argument: Interaction should not only be natural for the user, but also for the viewers. Thus, while some natural exploratory interaction methods fit well for the user, they may be less beneficial for the actual viewers, and vice versa.
+
+....Touchless 3D interaction (kinect) vs touch screen 2D interaction....different scenarios such as slicing, clipping, zooming in 2D and 3D visualization of medical volume data.
 } % end of abstract
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
@@ -134,7 +137,7 @@
 
 \section{Introduction}\label{sec:introduction}
 
-Using an object such as a mouse, can be useful both in 2D and 3D movements but often offer unnatural ways of exploring the scientific data, as the hands or not directly interacting with the visualization of the data.
+Using an object such as a mouse, can be useful both in 2D and 3D movements but often offer unnatural ways of exploring the scientific data, as the hands are not directly interacting with the visualization of the data.
 
 ....
 
@@ -155,6 +158,8 @@ Kinect dicom \cite{zora82163}
 
 Kinect operation \cite{OHaraGSPVMCCRDC14}
 
+Evaluation of Gesture \cite{Kirmizibayrak:2011:EGB:2087756.2087764}
+
 Gestures vs. Postures \cite{isenberg:hal-00781237}
 
 Volume Cracker (3D interaction with gadgets) \cite{Laha:2013:VCB:2491367.2491368}
@@ -165,11 +170,19 @@ Natural of touchless \cite{O'hara:2013:NTP:2442106.2442111}
 
 Touchless surgery \cite{Mentis:2012:IPI:2207676.2208536}
 
+Touching the 3rd dimension \cite{DBLP:journals/dagstuhl-reports/KeefeKSR12}
+
+\section{Why Hands-only?}
+
 \section{Gestures}
 
 Discuss gesture vs postures for kinect, and gesture available for both touch and kinect.
 
-\section{Scenario: Workstation}
+\section{Scenario: User exploration}
+
+User-centered...
+
+Mouse can be relevant, as touch devices.
 
 Touch good, reaching to the data.
 
@@ -177,11 +190,20 @@ Clipping, 2D to 3D representation of region.
 
 Rotation, gripping points...
 
+\begin{figure}[htb]
+	\centering
+	\fbox{\includegraphics[width=1.0\linewidth]{images/touch_workstation}}
+	\caption{Workstation: Touch screen}
+	\label{img:touch_workstation}
+\end{figure}
 
+\section{Scenario: Large Audience Presentation}
 
-\section{Scenario: Presentation}
+Viewer(Audience) centered.
 
 Dome, movement, viewers benefit to see how presenter interacts with the data.
+
+Thus, big 3D gestures better then gesture on touch device.
 
 \begin{figure}[htb]
 	\centering
@@ -197,14 +219,18 @@ Dome, movement, viewers benefit to see how presenter interacts with the data.
 	\label{img:dome_tf_change}
 \end{figure}
 
-\section{Scenario: Exhibition}
+\section{Scenario: Exhibition Area}
 
-Both touch and gesture tracking is relevant.
+Both user and viewer centered.
+
+Touch more relevant and gesture tracking is relevant.
+
+However, touchless interaction could benefit substainally for 2D/3D objects connected to the movement, such as the hand in the penguin picture.
 
 \begin{figure}[htb]
 	\centering
 	\fbox{\includegraphics[width=1.0\linewidth]{images/exhib_rotate_peng}}
-	\caption{Exhibition: Kinect}
+	\caption{Exhibition: Kinect, hand symbol supporting user and viewer guidance.}
 	\label{img:exhibition_kinect}
 \end{figure}
 
