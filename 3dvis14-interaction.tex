@@ -86,12 +86,12 @@
 
 
 %other entries to be set up for journal
-\shortauthortitle{Sund\'en \MakeLowercase{\textit{et al.}}: Hands-only 2D vs 3D interaction for exploring volume data}
+\shortauthortitle{Sund\'en \MakeLowercase{\textit{et al.}}: Hands-only 2D vs 3D interaction when exploring volume data}
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
 \abstract{
-Key argument: Interaction should not only be natural for the user, but also for the viewers. Thus, while some natural exploratory interaction methods fit well for the user, they may be less beneficial for the actual viewers, and vice versa.
+Key disucssion point: Interaction should not only be natural for the user, but also for the viewers. Thus, while some natural exploratory interaction methods fit well for the user, they may be less beneficial for the actual viewers, and vice versa.
 
 ....Touchless 3D interaction (kinect) vs touch screen 2D interaction....different scenarios such as slicing, clipping, zooming in 2D and 3D visualization of medical volume data.
 } % end of abstract
@@ -137,14 +137,23 @@ Key argument: Interaction should not only be natural for the user, but also for 
 
 \section{Introduction}\label{sec:introduction}
 
-Using an object such as a mouse, can be useful both in 2D and 3D movements but often offer unnatural ways of exploring the scientific data, as the hands are not directly interacting with the visualization of the data.
+We focus this paper on none expert users and viewers of the scientific data and of volume data exploration in general.
 
-....
+\section{Why Hands-only?}
 
+Using an object such as a mouse, can be useful both in 2D and 3D movements.
 
-\section{Related Work}\label{sec:relatedwork}
+If the user has training with a certain device coupled with a specific application, the expert user may certainly benefit from the type of interaction instead of hands-only interaction.
 
-....
+However, for a none expert, which is the focus of this paper, a mouse/joystick offers unnatural ways of exploring the scientific data, as the hands are not directly interacting with the visualization of the data.
+
+Mouse vs Kinect \cite{doi:10.1117/12.2006994}
+
+Natural of touchless \cite{O'hara:2013:NTP:2442106.2442111}
+
+Volume Cracker (3D interaction with gadgets) \cite{Laha:2013:VCB:2491367.2491368}
+
+\section{2D Touch Interaction}
 
 Position Paper Touch Interaction \cite{isenberg:hal-00781512}
 
@@ -154,43 +163,35 @@ Direct Touch Interaction Volume Exploration \cite{Klein:2012:DSD:2322389.2322403
 
 Autopsy Table \cite{LRFPY11}
 
+\section{3D Touchless Interaction}
+
 Kinect dicom \cite{zora82163}
 
 Kinect operation \cite{OHaraGSPVMCCRDC14}
 
-Evaluation of Gesture \cite{Kirmizibayrak:2011:EGB:2087756.2087764}
-
-Gestures vs. Postures \cite{isenberg:hal-00781237}
-
-Volume Cracker (3D interaction with gadgets) \cite{Laha:2013:VCB:2491367.2491368}
-
 Interactive Slice WIM \cite{Coffey:2012:ISW:2360744.2360843}
-
-Natural of touchless \cite{O'hara:2013:NTP:2442106.2442111}
 
 Touchless surgery \cite{Mentis:2012:IPI:2207676.2208536}
 
 Touching the 3rd dimension \cite{DBLP:journals/dagstuhl-reports/KeefeKSR12}
 
-\section{Why Hands-only?}
-
-Mouse vds Kinect \cite{doi:10.1117/12.2006994}
-
 \section{Gestures}
 
-Discuss gesture vs postures for kinect, and gesture available for both touch and kinect.
+Evaluation of Gesture \cite{Kirmizibayrak:2011:EGB:2087756.2087764}
 
-\section{Scenario: User exploration}
+Discuss gesture vs postures \cite{isenberg:hal-00781237} for kinect, and gesture available for both touch and kinect.
+
+\section{Scenario: Single user exploration}
 
 User-centered...
 
 Mouse can be relevant, as touch devices.
 
-Touch good, reaching to the data. Especially when the user in question is not expert in handling connected devices in that specific scenario. For instance, if the user has training with a certain device coupled with a specific application, the expert user may certainly benefit from the type of interaction instead of hands-only interaction.
+Touch good, reaching to the data. Especially when the user in question is not an expert in handling connected devices in that specific scenario.
 
 Clipping, 2D to 3D representation of region.
 
-Rotation, gripping points...
+Rotation, gripping points.
 
 \begin{figure}[htb]
 	\centering
@@ -199,38 +200,13 @@ Rotation, gripping points...
 	\label{img:touch_workstation}
 \end{figure}
 
-\section{Scenario: Large Audience Presentation}
-
-Viewer(Audience) centered.
-
-Presenter is always decoupled from the screen, as the presenter could not interact with the complete surface of it.
-
-Dome, movement, viewers benefit to see how presenter interacts with the data.
-Thus, big 3D gestures better then gesture on touch device.
-
-User should be standing in such away that the 3D movements the user performs can be projected correctly onto the screen.
-
-\begin{figure}[htb]
-	\centering
-	\fbox{\includegraphics[width=1.0\linewidth]{images/dome_clip}}
-	\caption{Dome}
-	\label{img:dome_clip}
-\end{figure}
-
-\begin{figure}[htb]
-	\centering
-	\fbox{\includegraphics[width=1.0\linewidth]{images/dome_tf_change}}
-	\caption{Dome Closeup}
-	\label{img:dome_tf_change}
-\end{figure}
-
 \section{Scenario: Exhibition Area}
 
 Both user and viewer centered.
 
-Touch more relevant and gesture tracking is relevant.
+Touch more relevant and touchless less relevant?
 
-However, touchless interaction could benefit substainally for 2D/3D objects connected to the movement, such as the hand in the penguin picture.
+However, our observation has showed that touchless interaction could benefit substantially for 2D/3D objects connected to the movement, such as the hand in the penguin picture.
 
 \begin{figure}[htb]
 	\centering
@@ -248,15 +224,44 @@ However, touchless interaction could benefit substainally for 2D/3D objects conn
 
 ...
 
+\section{Scenario: Large Audience Presentation}
+
+Viewer(Audience) centered.
+
+Presenter is always decoupled from the screen, as the presenter can not interact with the complete presentation surface. This is often due to the lack of touch capability, but foremost the sheer size of common screens for large audience presentations can not be reached from a standing location by the user.
+
+Dome, movement, viewers benefit to see how presenter interacts with the data.
+Thus, big 3D gestures better then gesture on touch device.
+
+User should be standing in such away that the 3D movements the user performs can be projected correctly onto the screen.
+
+Discuss interaction option made by audience, pros and cons
+
+\begin{figure}[htb]
+	\centering
+	\fbox{\includegraphics[width=1.0\linewidth]{images/dome_clip}}
+	\caption{Dome}
+	\label{img:dome_clip}
+\end{figure}
+
+\begin{figure}[htb]
+	\centering
+	\fbox{\includegraphics[width=1.0\linewidth]{images/dome_tf_change}}
+	\caption{Dome Closeup}
+	\label{img:dome_tf_change}
+\end{figure}
+
 \section{Conclusions}\label{sec:conclusion}
 
-A decoupled interaction approach is always less intuitive then one were the viewing surface and interaction area is the same.
+A decoupled interaction approach is always less intuitive then one which the viewing surface and interaction area is the same.
 
-However, when a decoupled approach is necassary certain elements can be introduced in order to help the audience.
+However, when a decoupled approach is necessary certain elements can be introduced in order to help the audience.
 
 Such as projecting the hand onto the viewing surface.
 
 \section{Future Evaluations of these scenarios}\label{sec:future}
+
+Based on our observations we deem that an expansion of the research within viewer or audience centered interaction methods would be beneficial.
 
 \bibliographystyle{abbrv}
 %%use following if all content of bibtex file should be shown
