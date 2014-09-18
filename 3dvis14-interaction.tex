@@ -39,6 +39,7 @@
 \usepackage{flushend}
 \usepackage{subfigure}
 \usepackage[noabbrev]{cleveref}
+\usepackage{color}
 %\usepackage[caption=false]{subfig}
 \setlength{\fboxsep}{0pt}
 \newcommand{\todo}[1]{\textbf{\textcolor{red}{[TODO: {#1}]}}}
@@ -234,18 +235,26 @@ Switching to transfer function mode will change the interpretation of the single
 
 \section{(Erik) Scenario: Exhibition Area}
 
-In an exhibition area there is often both small to medium sized displays utilized to showcase and explore the scientific data. Furthermore, there is mostly none experience users and viewers present which interact and view others interact with the scientific data. There are a wide range of setups with certain displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area, such as \cite{Laha:2013:VCB:2491367.2491368} (MORE REFS!!!). What they all have in common when it comes to these settings is that naturalness of the interaction is highly important. That fact, together with a reasonable level of functionality motivates the usage of hands-only setup, trough direct touch \cite{Klein:2012:DSD:2322389.2322403} and touchless methods \cite{O'hara:2013:NTP:2442106.2442111}.
+In an exhibition area there is often both small to medium sized displays utilized to showcase and explore the scientific data. Furthermore, there is mostly none experience users and viewers present which interact and view others interact with the scientific data. There are a wide range of setups with certain displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area, such as \cite{Laha:2013:VCB:2491367.2491368} \todo{More references}. What they all have in common when it comes to this scenario is that naturalness of the interaction is highly important. That fact, together with a reasonable level of functionality motivates the usage of hands-only setup, trough direct touch \cite{Klein:2012:DSD:2322389.2322403} and touchless methods \cite{O'hara:2013:NTP:2442106.2442111}.
 
-In figure \ref{img:exhibition_table} we see an exhibition setup example, known as an autopsy table \cite{LRFPY11}, where data such as a CT scan of a human can be explored in a close to true scale environment, using direct touch and multi-touch gestures. In a sense it is just an increased version of a tablet, but suitable for a larger audience, as the area surrounding the table is significantly larger. With this in mind, the naturalness of the interaction for the user would benefit from as close to real life movements as possible, to support the true scale visualization. This is of course a challenge for direct touch displays, as there is a 2D instead of a 3D user experience. However, it can be considered a commonly known practice how to interact with touch displays, trough common gesture such as pinch and swipe.
+In figure \ref{img:exhibition_table} we see an exhibition setup example, known as an autopsy table \cite{LRFPY11}, where data such as a CT scan of a human can be explored in a close to true scale environment, using direct touch and multi-touch gestures. Rotation of the object is done with a one finger trough an up and down movement, translation is performed with a one finger side-to-side sweeping and zoom with a two-finger pinch gesture.
+
+In a sense it is just an increased version of a tablet, but suitable for a larger audience, as the area surrounding the table is significantly larger. With this in mind, the naturalness of the interaction for the user would benefit from as close to real life movements as possible, to support the true scale visualization. This is of course a challenge for direct touch displays, as there is a 2D instead of a 3D user experience. However, it can be considered a commonly known practice how to interact with touch displays, trough common gestures such as pinch and swipe. As high-resolution accurate touch screens are available today, this type of setup is very appreciated for both the user and the audience.
 
 \begin{figure}[htb]
 	\centering
 	\fbox{\includegraphics[width=1.0\linewidth]{images/exhib_table}}
-	\caption{Exhibition: Touch Table}
+	\caption{A touch table (known as the Autopsy Table) for scientific data exploration of for instance scans of humans or animals which can be viewed in close to true scale.}
 	\label{img:exhibition_table}
 \end{figure}
 
-The setup seen in figure \ref{img:exhibition_kinect} is similar to figure \ref{img:exhibition_table} in terms of exploring data in true scale. The difference lie in the display surface, which is now without 2D interaction trough direct touch, and instead coupled with 3d interaction trough hand tracking. This setup can support a larger audience due the shear placement of the display surface, but comes with the downsides of a decoupled user interaction experience. The user will feel less in control of the data, even if you neglect the accuracy of the tracking, because he is not directly touching the display surface. Furthermore, the interaction might be less natural then direct touch, and the gestures more comprehensive to support the same level of functionality. As seen in figure \ref{img:exhibition_kinect}, a hand cursor is rendered which simulates the projection of the users hand onto the surface. Such visual cues not only help the user, but also allow a wider understanding for the audience to understand what operation the user is currently performing. Furthermore, the icons in the bottom are not only to avoid a more complex lineup of gestures for different operations, but also to make the operations performed more in contact with the visualization.
+The setup in figure \ref{img:exhibition_kinect} is similar to figure \ref{img:exhibition_table} in terms of exploring data in true scale. The difference lie in the display surface, which is now without 2D interaction trough direct touch, and instead coupled with 3d interaction trough hand tracking. This setup can support a larger audience due the shear placement of the display surface, but comes with the downsides of a decoupled user interaction experience. The user will feel less in control of the data, even if you neglect the accuracy of the tracking, because he is not directly touching the display surface. Furthermore, the interaction might be less natural then direct touch, and the gestures more comprehensive to support the same level of functionality. For instance, in our setup one hand is used for manipulating the camera or the light source, while the second hand acts as a state changer which tells the program what the moving hand should be mapped to.
+
+As seen in figure \ref{img:exhibition_kinect}, a hand cursor is rendered which simulates the projection of the users hand onto the surface. Such visual cues not only help the user, but also allow a wider understanding for the audience to comprehend what operation the user is currently performing. Furthermore, the icons in the bottom are not only introduced to avoid a increase in the quantity and complexity of gestures for different operations, but also to make the operations performed more in contact with the visualization.
+
+When comparing observations from the direct-touch and the touchless setup the visual cues in the touchless setup has so large impact for the novice user and viewer, when it comes to gestures, but only if the gestures are projected onto the screen in a natural way. It can also be noted, that these type of visual cues are not easily introduced into the touch table to increase the level of comprehension for the interaction, as all natural projection of for instance the users hands would be blocked by the hands themself.
+
+\todo{Develop this further in Large Audience section with the rendering of 3D arms....}
 
 \textbf{Conclusions:}
 Based on our observations we conclude that when performing a limited amount of operations, the setup with projector and 3D hand tracking is more optimal then the touch screen coupled with 2D finger gestures, when it comes to how the audience perceive the effect of interaction onto the visualization. The reason for this is that both the visualization and the projection of interaction can be visualized and perceived by the audience onto the display. This is not possible in practice if the user would directly interact with the display surface, as the projection of the users movement would be blocked by his hands, both for the audience and the user.
@@ -253,7 +262,7 @@ Based on our observations we conclude that when performing a limited amount of o
 \begin{figure}[htb]
 	\centering
 	\fbox{\includegraphics[width=1.0\linewidth]{images/exhib_rotate_peng}}
-	\caption{Exhibition: Kinect, hand symbol supporting user and viewer guidance.}
+	\caption{Volume visualization of a CT scanned penguin displayed on a wall with a in-front projector and coupled with a kinect for 3D interaction possiblities.}
 	\label{img:exhibition_kinect}
 \end{figure}
 
