@@ -261,66 +261,93 @@ Based on our observations we conclude that when performing a limited amount of o
 
 \section{(Alex) Scenario: Large Audience Presentation}
 
-Oral Presentation
-Being the most traditional form of 1 to many presentation techniques, oral presentations have been around since time immemorial.
-While they were restricted to a lecturer talking to the audience in the beginning, over time more and more tools have been added to increase the information transfer to the audience.
-Adding a blackboard allows the presenter to construct a visual representation of the information he is conveying.
-In these early forms, the audience is witness to the construction and can follow the construction as it happens.
-Note that there is a fundamental difference in learning between witnessing the creation vs observing the final result [citation needed].
-Nowadays, the blackboard has been replaced with a whiteboard or alternatively a slide show, but the fundamental principle has not changed since the beginning.
+\noindent \textbf{Oral Presentation} Being the most traditional form of 1 to many presentation techniques, oral presentations have been around since time immemorial.
+While they were restricted to a lecturer talking to the audience in the beginning, over time more and more tools and techniques have been added to improve the information transfer to the audience.
+Adding a blackboard allows the presenter to construct a visual representation of the information he is conveying while he is explaining the subject matter.
+In these early forms, the audience is witness to the construction and can follow the construction as it happens, thus increasing the knowledge transfer as compared to after-the-fact representations [citation needed].
+Nowadays, the blackboard has been replaced with a whiteboard or alternatively a slide presentation, but the fundamental principle has not changed since the beginning.
+This can be seen in the fact that must slide shows still follow the tradition of constructing the explanations in a linear form and are fairly standardized for each field [citation from Vis 2012].
 
-A prime example of an enhanced oral presentation technique where the interaction technique matters is medical education based on cadavers.
-Here, not only the content shown is of importance to the audience, but also the individual steps of how the presenter interacts with the body as this is one of the foci of study.
-While the previous example supports in theory an unlimited size of audience, the medical example is limited by the fact that every audience member has to see the presenter and cadaver.
-This is a good example of the [possible] trade-off between interaction design, audience size, and the possibility of using large-scale displays as a presentation tool.
+A prime example of an enhanced oral presentation technique in which the interaction technique matters a great deal is medical schools' education based on cadavers.
+In these settings, a lecturer dissects a cadaver live in front of students in order to teach them about a specific subject of the human body.
+Here, not only the content is of importance to the audience, but also the individual steps of how the presenter interacts with the body as this is one of the foci of study.
+While the previous example supports, in theory, an unlimited audience size, the medical example is limited by the fact that every audience member has to see the presenter and cadaver.
+We found that this simple restriction is present in many interaction techniques that we investigated.
+Being able to see and understand the movements and gestures of the presenter is important for understanding the information that is conveyed.
+This medical example is a good example of the necessary trade-off between interaction design, audience size, and the possibility of using large-scale displays as a presentation tool.
 
-The next logical development step from large-scale, large-audience displays is to include interactive content.
-The results of the discussion for this scenario are independent of the data that is shown or the details of the interaction.
+The next logical development step for large-scale, large-audience display scenarios is to include interactive, rather than predetermined, content content.
+The results of the discussion for this scenario are independent of the data that is shown or the details of the interaction, as the first-order approximation of the usage scenario is the same.
 Principally, we can distinguish two classes of solutions for this interaction problem.
+
 The first class, being direct interaction, requires the lecturer to perform the interaction himself.
+The availability for this kind of interaction is heavily dependent on the screen-size and the layout of the venue.
 For a detailed discussion of this class of solution, see below [or where ever].
-The second class is indirect interaction [picture of Anders], where the lecturer is communicating orally with a second person controlling the content.
+
+The second class is indirect interaction (see Figure~\ref{img:dome_presentation}), where the lecturer is communicating orally with a second person controlling the visualization and thus content.
 For this part, we assume that the audience hears the communication between the two people.
-From an interaction point of view, this has both benefits and drawbacks.
-One benefit is the added dynamics between the presenter and the controller, creating a more dynamic environment for the audience compared to just the presenter.
-From an interaction point of view, the audience is witness to the intended action of the interaction, rather than the physical act of interacting.
+From an interaction point of view, this interplay between presenter and controller has both benefits and drawbacks.
+One benefit is the added dynamics between the presenter and the controller, creating a more dynamic environment for the audience compared to just listening to the presenter, which creates a more engaging environment, itself sparking more interaction between the audience and the presenter.
+From an interaction point of view, the audience is witness to the intended action of the interaction, rather than the physical act of interacting itself.
 The audience knows that, for example, the focus will be on a specific part of a rendering before it happens.
-And rather than being witness of the manual interaction leading to that focus, it perceives the interaction as being completely indirect and decoupled from the presenter.
-The explicit details of the interaction fall outside the regime of this paper, as the audience will not (in general) witness how the controller interacts with the visualization.
-This decoupledness is the prime attribute for this class of solutions and whether this is a benefit or drawback depends on the situation to which it is applied.
+Rather than being witness of the manual interaction leading to that focus, it perceives the interaction as being completely indirect and decoupled from the presenter.
+By removing any signs of an interaction, the visualization seems more seamless and the presenter can focus on the presentation and content rather than multitasking with the presentation and the controlling.
+The explicit details of the interaction in this case fall outside the scope of this paper, as the audience will not (in general) see how the controller interacts with the visualization.
+This decoupling is the prime attribute for this class of interaction solutions and whether this is a benefit or drawback depends on the situation to which it is applied.
 
 A slight variant to this is the concept of remote presentations.
-In this case the presenter is not in the same room as the intended audience, but his voice (and possible video) is streamed into the same room.
+In this case, the presenter is not in the same room as the intended audience, but his voice (and possible video footage) is streamed live into the same room.
 From an interaction point of view, this does not change much, as the presenter's interaction with the content was limited to a oral communication with the controller.
-Furthermore, an increase in presence techniques, such as 3D conference applications will in the future further blur the line between a physically-present presenter and a remote presenter.
+This interaction is completely unchanged in this variation.
+The only visible difference to the audience is the missing presence of the presenter in the same room.
+An increase in presence techniques, such as 3D conference applications, will in the future further blur the line between a physically-present presenter and a remote presenter.
 
 
-Dome vs VR Arena
-In our research facility, we have access to two different display devices that bear superficial similarities, but induce fundamental differences in how the interaction with the audience works.
+\noindent \textbf{Dome vs VR Arena vs Decision Arena} In our research facility, we have access to three different display devices that bear superficial similarities, but induce fundamental differences in how the interaction with the visualization and interplay with the audience works.
 
-One of the display devices is a full field-of-view 160 degrees hemispherical dome with space for 99 audience members, which is projected using a stereo projector system.
-This is a similar setup used in traditional planetariums, but in our case, an interactive rendering system is used instead to produce the content.
+One of the display systems is a 160 degree field-of-view hemispherical dome surface with seating for 99 audience members, which is projected on using a stereo projector system.
+This is a similar setup to the ones used in traditional planetariums, but in our case, an interactive rendering system is used instead to produce the content.
 The interaction characteristics for this setup is that both the audience and the presenter are at a great physical distance (usually > 5 meter) from the projection surface.
 This completely inhibits direct interaction techniques like pointing with a finger or doing gestures that are directly relate to the content that is shown on the screen.
 Instead, indirect techniques must be used, like laser pointers, rendered cursors on the screen, gesture recognition, or oral communication with a controller.
+One issue with this system is the impossibility of mapping physical gestures to match the visualizations.
+Due to the large scale of the room and the wide differences in seating position, it is not possible to place the presenter in such a way that his gestures would seem integrated into the visualization for all viewers simultaneously.
 
-The other setup available to us is a flat surface back-projection of three full HD projections which are aligned to produce a wide projection surface of about 5000x1080 pixel [check with Miro].
+The other setup available onsite is a flat, back-projected surface using three full HD projectors, which are aligned to produce a wide projection surface of about 5000$\times$1080 pixel [check with Miro].
 The room in which this is located seats about 30 people.
 The benefit of having a back-projection is that the presenter can stand in front of the projection without casting a shadow on the projection surface, thus allowing physical access to the displayed content.
-In comparison to the dome theater, this, and the limited size, allows the presenter to walk in front of the whole content and using natural gestures (which may be integrated, registered, and synchronized with the rendering) to interact with the content.
+In comparison to the dome theater, this, and the limited size, allows the presenter to walk in front of the whole content and using natural gestures like pointing (which may be integrated, registered, and synchronized with the rendering) to interact with the content.
 This natural, gesture-free interaction has been proved very useful in the workflow that we use in the facility.
 
+The third setup is a curved-screen decision arena in which the audience members are located on the inside of a round room with the walls being used as projection surfaces.
+This setup is very useful for a small group of people ($<$ 10 persons) to simultaneously work on decisions using the information projected on the surfaces.
+The interaction techniques for this, as compared to the previous two, are fairly limited in regular usage, as this is not a tradition presentation setup, but rather a collaborative exploration of data using visualization.
 
-Viewer(Audience) centered.
 
-Presenter is always decoupled from the screen, as the presenter can not interact with the complete presentation surface. This is often due to the lack of touch capability, but foremost the sheer size of common screens for large audience presentations can not be reached from a standing location by the user.
+\begin{figure}[htb]
+	\centering
+	\fbox{\includegraphics[width=1.0\linewidth]{images/dome_oralpresentation}}
+	\caption{Presentation on large scale surfaces}
+	\label{img:dome_presentation}
+\end{figure}
 
-Dome, movement, viewers benefit to see how presenter interacts with the data.
-Thus, big 3D gestures better then gesture on touch device.
+\begin{figure}[htb]
+	\centering
+	\fbox{\includegraphics[width=1.0\linewidth]{images/vr_dvr}}
+	\caption{A volume rendering on a flat, back-projected surface}
+	\label{img:vr_dvr}
+\end{figure}
 
-User should be standing in such away that the 3D movements the user performs can be projected correctly onto the screen.
 
-Discuss interaction option made by audience, pros and cons
+%Presenter is always decoupled from the screen, as the presenter can not interact with the complete presentation surface. This is often due to the lack of touch capability, but foremost the sheer size of common screens for large audience presentations can not be reached from a standing location by the user.
+
+%Dome, movement, viewers benefit to see how presenter interacts with the data.
+%Thus, big 3D gestures better then gesture on touch device.
+
+%User should be standing in such away that the 3D movements the user performs can be projected correctly onto the screen.
+
+%Discuss interaction option made by audience, pros and cons
+
 
 \begin{figure}[htb]
 	\centering
