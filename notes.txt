@@ -1,0 +1,32 @@
+Voice interaction? More decoupled
+
+Is rendering the hand on the dome as coupled as direct touch in the touch table?
+
+Exploration, analysis and presentation.
+
+It has not recieved the right attention:
+We are not aware about any target research about interaction for presentation.
+
+Interaction tech/cat.
+
+Touch
+Mouse
+Hand tracking
+Laser pointer
+
+====Sections=====
+
+Introduction
+
+Scenarios (Screen Sizes, Audience Sizes)
+
+Classification (Tacking interaction techniques from the scenarios and put them into order, based on the expressibility for the viewers)
+
+Scenarios revisited.
+
+Future implication (Bridging the continum, simulate touch on big screens)
+
+Conclusion
+
+
+
