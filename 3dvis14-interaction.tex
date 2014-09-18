@@ -31,6 +31,7 @@
 \usepackage{amsmath}
 \usepackage{flushend}
 \usepackage{subfigure}
+\usepackage[noabbrev]{cleveref}
 %\usepackage[caption=false]{subfig}
 \setlength{\fboxsep}{0pt}
 \newcommand{\todo}[1]{\textbf{\textcolor{red}{[TODO: {#1}]}}}
@@ -183,6 +184,14 @@ Discuss gesture vs postures \cite{isenberg:hal-00781237} for kinect, and gesture
 
 \section{(Daniel) Scenario: Single user exploration}
 
+This scenario deals the situation when the presentation is performed on a small screen, such as a tablet or desktop monitor, and the audience consists of a few people. 
+The distance between the audience and the presenter is typically small and allows for a tight communication between the two parts.
+An example can be seen in~\cref{img:touch_workstation}, where the presenter uses a touch screen to interact with a fetus scanned using ultrasound.
+The presenter can in this case switch to different modes, which controls the behaviour of the gestures. 
+The standard mode rotates, translates and zooms using single finger, two fingers moving together and pinching, respectively. 
+Switching to transfer function mode will change the interpretation of the single finger touch such that the threshold and opacity are changed according to the horizontal and vertical movement.
+
+This scenario deals with small screens and 
 User-centered...
 
 Mouse can be relevant, as touch devices.
