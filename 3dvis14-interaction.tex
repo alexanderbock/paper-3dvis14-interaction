@@ -142,18 +142,24 @@ In this paper we share our experiences with 2D and 3D interaction in different s
 \maketitle
 
 \section{Introduction}\label{sec:introduction}
+Different types of interaction within visualization have in recent years become increasingly common due to the introduction of low-cost interaction devices.
+Since a couple of years it is no longer obvious that a mouse and keyboard will be used as the main type of interaction. 
+Touch screens are now de-facto standard for phones and tablets while low-cost solutions for touchless interaction, such as the Kinect, has inspired a range of applications. 
+Much focus has been on the level of interaction expertise of the user to determine if the type of interaction is suitable for a certain scenario.
+However, the intended use of the application and the place where it is located are also of great importance. 
 
-A common way to classify the use of visualization is to divide it into exploration, analysis and presentation. 
+An analogy can be made with the visualization community, which commonly classifies the use of visualization into exploration, analysis and presentation. 
 Each usecase typically requires a different approach and tools. 
 While the exploration phase requires a flexible interaction with the visualization, 
-the presentation phase is scaled down to allow the user to change only a few parameters or use a pre-determined animation. 
-This distinction has to our knowledge not been done for interaction, where it is more common to refer to the level of expertise of the user. 
-This manuscript will focus on the use of interaction for presentation. 
+the presentation phase is scaled down to allow the user to change only a few parameters or for example use a pre-determined animation. 
+This distinction has to our knowledge not been done for interaction and we will in this manuscript focus on the use of interaction for presentation purposes. 
 This involves one or more people interacting with a visualization in order to present information to an audience that may consist of a single person or many people. 
-
-While we comment on expert viewers, the focus this paper is on none expert viewers, together with either an expert or none expert user. Our definition of expert is a person which is familiar within the area of volume data exploration.
-
-....Touchless 3D interaction (kinect) vs touch screen 2D interaction....different scenarios such as slicing, clipping, zooming in 2D and 3D visualization of medical volume data.
+In particular, we draw examples from scientific visualization where the presenter is not simply switching slides but is trying to tell a story about the data being visualized. 
+Typical parameters that are altered include the moving the camera (i.e. rotate, translate and zoom), cropping the data set in order to reveal information inside and applying different type of filters such as a threshold to hide undesirable information. 
+We will show examples on how these parameters can be changed for touch and touchless interaction and discuss our experience in using them in different settings, with respect to size of screen and audience, for presentation purposes.
+%While we comment on expert viewers, the focus this paper is on none expert viewers, together with either an expert or none expert user. Our definition of expert is a person which is familiar within the area of volume data exploration.
+%
+%....Touchless 3D interaction (kinect) vs touch screen 2D interaction....different scenarios such as slicing, clipping, zooming in 2D and 3D visualization of medical volume data.
 
 \section{Why Hands-only?}
 
