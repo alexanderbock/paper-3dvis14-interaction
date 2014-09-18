@@ -80,27 +80,36 @@
 
 %% Paper title.
 
-\title{Hands-only 2D vs 3D interaction for scientific data exploration in a user vs viewer perspective}
+\title{Interaction techniques for visualization in an audience perspective}
 
 %% This is how authors are specified in the journal style
 
 %% indicate IEEE Member or Student Member in form indicated below
 %% indicate IEEE Member or Student Member in form indicated below
-\author{Erik Sund\'en, \textit{Member, IEEE} and Timo Ropinski, \textit{Member, IEEE}}
-\authorfooter{
+%\author{Erik Sund\'en, \textit{Member, IEEE}, Alexander Bock, \textit{Student Member, IEEE}, Daniel J\"onsson, \textit{Student Member, IEEE}\\ and Timo Ropinski, \textit{Member, IEEE}}
+%\authorfooter{
 %% insert punctuation at end of each item
-\item
- Erik Sund\'en and Timo Ropinski are with Link{\"o}ping University. E-mail: \{erik.sunden,timo.ropinski\}@liu.se.
-}
+%\item
+% Erik Sund\'en, Alexander Bock, Daniel J\"onsson and Timo Ropinski are with Link{\"o}ping University. E-mail: \{erik.sunden,alexander.bock,daniel.jonsson,timo.ropinski\}@liu.se.
+%}
+
+\author{Erik Sund\'en\thanks{e-mail:erik.sunden@liu.se}\\ %
+        \scriptsize Link{\"o}ping University %
+\and Alexander Bock\thanks{e-mail:alexander.bock@liu.se}\\ %
+			   \scriptsize Link{\"o}ping University %
+\and Daniel J\"onsson\thanks{e-mail:daniel.jonsson@liu.se}\\ %
+          \scriptsize Link{\"o}ping University %
+\and Timo Ropinski\thanks{e-mail:timo.ropinski@liu.se}\\ %
+           \scriptsize Link{\"o}ping University }
 
 
 %other entries to be set up for journal
-\shortauthortitle{Sund\'en \MakeLowercase{\textit{et al.}}: Hands-only 2D vs 3D interaction when exploring volume data}
+%\shortauthortitle{Sund\'en \MakeLowercase{\textit{et al.}}: Hands-only 2D vs 3D interaction when exploring volume data}
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
-\abstract{
-In this paper we share our experiences with 2D and 3D interaction in different scenarios and environments which involve not only a user, but a certain amount of additional viewers, with different level of expertise in the area of volume exploration. Our additional focus is on hands-only interaction which based on previous work is a very natural form of interacting with the data. We can conclude, that good interaction in our scenarios could benefit from a focus on the user, instead of the viewer. While some natural exploratory interaction methods fit well for the user, they may be less beneficial for the actual viewers, and vice versa. Of course, an appropriate natural interaction for the user can in many scenarios be an appropriate interaction for the viewers, but our findings show that it usually highly dependent on the setting where the interaction and viewing takes place.
+\abstract{ 
+In this paper we share our experiences with different type of interaction, such as 2D direct touch and 3D tracking, in different scenarios and environments which involve not only a user, but an audience, with a novice level of expertise in the area of scientific data exploration. Our focus is on describing ways of interacting with the data, with the focus on how natrual and understandable they are for the audience. While some natural exploratory interaction methods fit well for the user, they may be less beneficial for the audience, and vice versa. Of course, an appropriate natural interaction for the user can in many scenarios be an appropriate interaction for the viewers, but our findings show that it usually highly dependent on the setting where the interaction and viewing takes place.
 } % end of abstract
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
@@ -161,8 +170,8 @@ We will show examples on how these parameters can be changed for touch and touch
 %While we comment on expert viewers, the focus this paper is on none expert viewers, together with either an expert or none expert user. Our definition of expert is a person which is familiar within the area of volume data exploration.
 %
 %....Touchless 3D interaction (kinect) vs touch screen 2D interaction....different scenarios such as slicing, clipping, zooming in 2D and 3D visualization of medical volume data.
-
-\section{Why Hands-only?}
+\todo{Point out: Interaction is part of the presentation} 
+\section{Device vs Hands-Only}
 
 Using an object such as a mouse, can be useful both in 2D and 3D movements.
 
