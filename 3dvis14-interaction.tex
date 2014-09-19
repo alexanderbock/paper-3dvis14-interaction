@@ -80,7 +80,7 @@
 
 %% Paper title.
 
-\title{An audience-centric view of interaction techniques in \\interactive presentations of scientific 3D data}
+\title{An audience-centric view on interaction techniques \\for interactive presentation of scientific 3D data}
 
 %% This is how authors are specified in the journal style
 
@@ -114,7 +114,7 @@ In this paper we share our experiences with different types of interaction, such
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
 %% please capitalize first letter and insert punctuation after last keyword
-\keywords{interaction, audience, 2D, 3D, touch display, kinect, voice}
+\keywords{interaction, audience, 2D, 3D, direct touch, touchless, voice}
 
 %% ACM Computing Classification System (CCS). 
 %% See <http://www.acm.org/class/1998/> for details.
@@ -187,14 +187,10 @@ Natural of touchless \cite{O'hara:2013:NTP:2442106.2442111}
 
 Volume Cracker (3D interaction with gadgets) \cite{Laha:2013:VCB:2491367.2491368}
 
-\section{(Daniel) Scenario: Single user exploration}
+\section{Scenario: Presentation on workstation}
 
 This scenario deals the situation when the presentation is performed on a small screen, such as a tablet or desktop monitor, and the audience consists of a few people. 
-The distance between the audience and the presenter is typically small and allows for a tight communication between the two parts. 
-The audience can easily communicate preferences in what to explore and may in some cases even intervene with the presenter to interact with the visualization. 
-An intuitive interaction can therefore engage the audience and create a more dynamic presentation.
-An example can be seen in~\cref{img:touch_workstation}, where the presenter uses a touch screen to interact with a fetus scanned using ultrasound.
-The presenter can in this case switch to different modes, which controls the behaviour of the gestures. 
+The distance between the audience and the presenter is typically small and allows for a tight communication between the two parts. The audience can easily communicate preferences in what to explore and may in some cases even intervene with the presenter to interact with the visualization. An intuitive interaction can therefore engage the audience and create a more dynamic presentation. An example can be seen in~\cref{img:touch_workstation}, where the presenter uses a touch screen or touchpad to interact with a fetus scanned using ultrasound. The presenter can in this case switch to different modes, utilizing the keyboard, which controls the behaviour of the gestures. 
 The standard mode rotates, translates and zooms using single finger, two fingers moving together and pinching, respectively. \todo{Or other gestures... More general? (ab)}
 Switching to transfer function mode will change the interpretation of the single finger touch such that the threshold and opacity are changed according to the horizontal and vertical movement. \todo{At this point, what is the transfer function mode? Why is switching necessary at all? (= simplifying interaction design) (ab)}
 
@@ -216,9 +212,9 @@ Switching to transfer function mode will change the interpretation of the single
 	\label{img:touch_workstation}
 \end{figure}
 
-\section{(Erik) Scenario: Exhibition Area}
+\section{Scenario: Presentations in Exhibition Area}
 
-In an exhibition area there is often both small to medium sized displays utilized to showcase and explore the scientific data. Furthermore, there is mostly none experience users and viewers present which interact and view others interact with the scientific data. There are a wide range of setups with certain displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area, such as \cite{Laha:2013:VCB:2491367.2491368} \todo{More references}. What they all have in common when it comes to this scenario is that naturalness of the interaction is highly important \todo{Explain why? (ab)}. That fact, together with a reasonable level of functionality motivates the usage of hands-only setup, trough direct touch \cite{Klein:2012:DSD:2322389.2322403} and touchless methods \cite{O'hara:2013:NTP:2442106.2442111}.
+In an exhibition area there is often both small to medium sized displays utilized to showcase and explore the scientific data. Furthermore, there is mostly none experience users and viewers present which interact and view others interact with the scientific data. There are a wide range of setups with certain displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area, such as \cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}. What they all have in common when it comes to this scenario is that naturalness of the interaction is highly important \todo{Explain why? (ab)}. That fact, together with a reasonable level of functionality motivates the usage of hands-only setup, trough direct touch \cite{Klein:2012:DSD:2322389.2322403} and touchless methods \cite{O'hara:2013:NTP:2442106.2442111}.
 
 In figure \ref{img:exhibition_table} we see an exhibition setup example, known as an autopsy table \cite{LRFPY11}, where data such as a CT scan of a human can be explored in a close to true scale environment, using direct touch and multi-touch gestures. Rotation of the object is done with a one finger trough an up and down movement, translation is performed with a one finger side-to-side sweeping and zoom with a two-finger pinch gesture.
 
