@@ -255,67 +255,28 @@ The left hand is tracked and utilized to switch between different rendering stat
 \end{figure}
 
 \subsection{Scenario: Large Audience Presentation} \label{sec:largeaudience}
-\noindent \textbf{Oral Presentation} Being the most traditional form of presentation techniques, oral presentations have been around since time immemorial.
+Our display system in this scenario is a wide field-of-view hemispherical dome surface with seating for 99 audience members (see figure~\ref{img:dome_presentation} and ~\ref{img:dome_clip}).
+This is a similar setup to traditional planetariums, but in our case, the content is produced using an interactive rendering system.
+
+\begin{figure}[htb]
+	\centering
+	\fbox{\includegraphics[width=\linewidth, height=165pt]{images/dome_oralpresentation}}
+	\caption{Presentation on large scale surface using the voice as an interaction technique to communicate intent rather than direct actions.}
+	\label{img:dome_presentation}
+\end{figure}
+
+\noindent \textbf{Oral Presentation}, being the most traditional form of presentation techniques, has been around since time immemorial.
 While they were limited to a lecturer talking initially, tools and techniques have been added to improve this presentation mode.
 A prime example of an enhancement, in which the interaction technique matters a great deal, is medical schools' education based on the dissection of cadavers in class.
 Here, not only the presented content is important, but even more important is the way the lecturer interacts with the body.
 A limitation to this technique is the fact that every audience member has to see the presenter and cadaver.
 We found that this simple restriction is present in many interaction techniques that we investigated, as being able to see and understand the movements and gestures of the presenter is important for the audiences' understanding.
 
-An extension of these techniques are large-scale, large-audience displays showing interactive, rather than predetermined, computer-generated content.
-Principally, we can distinguish two classes of solutions for this interaction problem.
-%
-The first class, being direct interaction, requires the presenter to perform the interaction himself.
-The availability for this kind of interaction is heavily dependent on the screen-size and the layout of the venue and resembles the scenario described previously regarding exhibition areas.
-%
-The second class is indirect interaction (see Figure~\ref{img:dome_presentation}), where the presenter is communicating orally with an entity controlling the visualization.
-This means that the voice input itself becomes an interface device between the presenter and the content.
-For our argumentation, there is no difference if the presenter is communicating with a second person steering the visualization, or an advanced voice-recognition system.
-From the audience's point of view, the presenter is the user of the system and the voice is the interaction technique, and the audience does not know (or care) what happens afterwards.
-
-%From an interaction point of view, this interplay between presenter and controller has both benefits and drawbacks.
-%One benefit is the dynamics between the presenter and the controller, creating a more engaging environment for the audience, itself sparking more interaction between the audience and the presenter.
-From an interaction point of view, the audience is witness to the intended action of the interaction, rather than the physical act of interacting itself.
-The audience knows that, for example, the focus will be on a specific part of a rendering before it happens.
-Rather than witnessing the manual interaction leading to that focus, it perceives the interaction as being completely decoupled from the presenter.
-By removing any signs of a physical interaction, the presenter can focus on the explanations and content rather than multitasking with the presentation and the controlling.
-This decoupling is the prime attribute for this class of interaction solutions and whether this is a benefit or drawback depends on the situation to which it is applied.
-
 A slight variant to this is the concept of remote presentations.
 In this case, the presenter is not in the same room as the intended audience, but his voice (and possible video footage) is streamed instead.
 Regarding the interaction, there is no change as the presenter's interaction with the content was limited to communication and there was no physical input necessary.
 The only visible difference to the audience is the missing presence of the presenter in the same room, which might make other, complementary, sources of interaction impossible (such as using laser pointers).
 An increase in future presence technologies will further blur the line between a physically-present presenter and a remote presenter.
-
-
-\noindent \textbf{Screen sizes} In our research facility, we have access to two display devices that bear superficial similarities, but induce fundamental differences in how the interaction with the visualization and interplay with the audience works.
-
-\begin{figure}
-	\centering
-	\fbox{\includegraphics[width=\linewidth, height=165pt]{images/dome_oralpresentation}}
-	\caption{Presentation on large scale surfaces using the voice as an interaction technique to communicate intent rather than direct actions.}
-	\label{img:dome_presentation}
-\end{figure}
-
-One of the display systems is a wide field-of-view hemispherical dome surface with seating for 99 audience members (see figure~\ref{img:dome_presentation}).
-This is a similar setup to traditional planetariums, but in our case, the content is produced using an interactive rendering system.
-The interaction characteristics for this setup is that both the audience and the presenter are at a physical distance from the projection surface.
-This completely inhibits direct interaction techniques like pointing with a finger or doing gestures that are directly relate to the content's position on the screen.
-Instead, indirect techniques must be used, like laser pointers, rendered cursors on the screen, gesture recognition, or oral communication.
-One issue with this system is the impossibility of mapping physical gestures to match the visualizations.
-Due to the large scale of the room and the wide differences in seating position, it is not possible to place the presenter in such a way that his gestures would seem integrated into the visualization for all viewers simultaneously.
-
-\begin{figure}
-	\centering
-	\fbox{\includegraphics[width=\linewidth, height=165pt]{images/vr_dvr}}
-	\caption{A volume rendering on a flat, back-projected surface allowing the presenter direct access to the content.}
-	\label{img:vr_dvr}
-\end{figure}
-
-The other setup available onsite is a wide, flat, back-projected surface with space for about 30 people (see figure~\ref{img:vr_dvr}).
-The benefit of having a back-projection is that the presenter can stand in front of the surface without casting a shadow, thus allowing physical access to the displayed content.
-In comparison to the previous setup, this, and the limited size, allows the presenter to walk in front of the whole content and using natural gestures like pointing (which may be integrated, registered, and synchronized with the rendering) to interact with the content.
-This natural, gesture-free interaction has been proved very useful in the workflow that we use in the facility.
 
 %The third setup is a curved-screen decision arena in which the audience members are located on the inside of a round room with the walls being used as projection surfaces.
 %This setup is very useful for a small group of people ($<$ 10 persons) to simultaneously work on decisions using the information projected on the surfaces.
@@ -331,14 +292,6 @@ This natural, gesture-free interaction has been proved very useful in the workfl
 %User should be standing in such away that the 3D movements the user performs can be projected correctly onto the screen.
 
 %Discuss interaction option made by audience, pros and cons
-
-
-\begin{figure}[htb]
-	\centering
-	\fbox{\includegraphics[width=1.0\linewidth]{images/dome_clip}}
-	\caption{Dome}
-	\label{img:dome_clip}
-\end{figure}
 
 %\begin{figure}[htb]
 %	\centering
@@ -360,9 +313,32 @@ This type of interaction is present in scenarios \ref{sec:workstation} and \ref{
 When analyzing this interaction type from a presentation perspective, the audience can see the movements of the presenters' hands and fingers and, through that, get an understanding of what will happen on the screen.
 Furthermore, there is little distance between the interaction plane and the display surface and, thus, spatially correlated interaction events are well perceived.
 However, the presenter also hides part of the screen due to the occluding hands and arms.
-Furthermore, when the audience grows larger it becomes harder for every audience member to see the gestures.
+Also, when the audience grows larger it becomes harder for every audience member to see the gestures.
+This type of interaction is not present in scenario \ref{sec:largeaudience}, where both the audience and the presenter are at a physical distance from the projection surface.
+That scenario completely inhibits direct interaction techniques like pointing with a finger or doing gestures that are directly relate to the content's position on the screen.
+Instead, indirect techniques must be used, like laser pointers, rendered cursors on the screen, gesture recognition, or oral communication.
+
+\begin{figure}[htb]
+	\centering
+	\fbox{\includegraphics[width=1.0\linewidth]{images/dome_clip}}
+	\caption{Presentation on large scale surface using the kinect device as an interaction technique to interact with the visualization trought}
+	\label{img:dome_clip}
+\end{figure}
 
 %Importance of Touch \cite{Robles-De-La-Torre:2006:IST:1158827.1159097}
+
+\begin{figure*}
+    \centering
+    \subfigure[Relevance chart mapped to technique categories and our situations.]{
+        \includegraphics[width=\columnwidth]{classification.pdf}
+        \label{classifiy_diagram}
+    }
+    \hfill
+    \subfigure[The ranges of applicability for our chosen scenarios]{
+        \includegraphics[width=1.0\columnwidth]{expressivity.pdf}
+        \label{scenario_diagram}
+    }	
+\end{figure*}
 
 \subsection{Touchless Interaction}
 Touchless interaction is useful in situations such as surgery~\cite{Mentis:2012:IPI:2207676.2208536} where touching an interaction device is cumbersome or must be avoided due to hygienic constraints.
@@ -388,10 +364,9 @@ To clarify, when the user is moving is hand towards on icon, audience perceive b
 
 However, our observation did show that these elements did not bridge the gap between registered and unregistered gestures sufficiently so that touchless was as suitable as direct touch for an audience size where everyone could see the gestures and the visualization on the touch table.
 
-This type of interaction is also present in scenario \ref{sec:largeaudience}. The type of touchless interaction setup is quite similar, however both the audience size and the display size is substantially increased.
-At these display and audience sizes it becomes clear that registered gestures are not possible, as the presenter can not access the complete display surface directly.
+This type of interaction is also present in scenario \ref{sec:largeaudience}. The type of touchless interaction setup is quite similar, however both the audience size and the display size is substantially increased. One issue with this system is the impossibility of mapping physical gestures to match the visualizations. Due to the large scale of the room and the wide differences in seating position, it is not possible to place the presenter in such a way that his gestures would seem integrated into the visualization for all viewers simultaneously.
 
-Furthermore, seen from a presentation perspective, the touchless gestures in our setup is more expressive then what direct touch gestures on a handheld device or a touch table would be.
+However, seen from a presentation perspective, the touchless gestures in our setup is more expressive then what direct touch gestures on a handheld device or a touch table would be.
 Thus, the touchless setup could be considered as a better presentation tool then utilizing a touch device for remote communication, as done by Coffey et al \cite{Coffey:2012:ISW:2360744.2360843}.
 
 %Touching the 3rd dimension \cite{DBLP:journals/dagstuhl-reports/KeefeKSR12}
@@ -404,22 +379,22 @@ Thus, the touchless setup could be considered as a better presentation tool then
 
 \subsection{Voice}
 
+Interacting with the visualization by voice is performed in scenario \ref{sec:largeaudience} (see Figure~\ref{img:dome_presentation}), where the presenter is communicating orally with an entity controlling the visualization. The voice acts as an input itself and becomes an interface device between the presenter and the content.
+For our argumentation, there is no difference if the presenter is communicating with a second person steering the visualization, or an advanced voice-recognition system.
+From the audience's point of view, the presenter is the user of the system and the voice is the interaction technique, and the audience does not know (or care) what happens afterwards.
+
+%From an interaction point of view, this interplay between presenter and controller has both benefits and drawbacks.
+%One benefit is the dynamics between the presenter and the controller, creating a more engaging environment for the audience, itself sparking more interaction between the audience and the presenter.
+From an interaction point of view, the audience is witness to the intended action of the interaction, rather than the physical act of interacting itself.
+The audience knows that, for example, the focus will be on a specific part of a rendering before it happens.
+Rather than witnessing the manual interaction leading to that focus, it perceives the interaction as being completely decoupled from the presenter.
+By removing any signs of a physical interaction, the presenter can focus on the explanations and content rather than multitasking with the presentation and the controlling.
+
+In a presentation aspect, this interaction could generally be perceived as very expressive and beneficial as the audience can understand directly what is going to happen trough the voice command, before it happens, if there is a natural correlation between the command and the changes performed in the visualization. However, even for a perfect voice interaction system, the ambiguity of natural language can require a long-winded explanation in cases where precise interaction is needed.
+
 \section{Classification} \label{sec:classification}
 
 To further show when a certain interaction technique is preferable from an expressiveness to audience point of view we introduce a classification of the techniques covered in our scenarios. The chart show the relevance of the technique in relation to audience and display size. It should be noted, that while a technique usage relevance is highly dependent on the scenarios and might be less suitable in when it comes to different scenarios.
-
-\begin{figure*}
-    \centering
-    \subfigure[Relevance chart mapped to technique categories and our situations.]{
-        \includegraphics[width=\columnwidth]{classification.pdf}
-        \label{classifiy_diagram}
-    }
-    \hfill
-    \subfigure[The ranges of applicability for our chosen scenarios]{
-        \includegraphics[width=1.0\columnwidth]{expressivity.pdf}
-        \label{scenario_diagram}
-    }	
-\end{figure*}
 
 %\begin{figure}
 %	\centering
