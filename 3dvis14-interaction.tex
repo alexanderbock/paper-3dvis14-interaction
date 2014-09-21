@@ -359,27 +359,30 @@ When the audience grows larger it may be hard to see the gestures.
 Touchless interaction has been found useful in situations such as surgery~\cite{Mentis:2012:IPI:2207676.2208536} where touching an interaction device is cumbersome or should be avoided.
 Moving hands freely in the air allows expressive gestures to be created without being restricted to 2D motion as in the case for the direct touch interaction. However, recognizing when a gesture starts and ends can be difficult since there is no natural deactivation state \cite{Kirmizibayrak:2011:EGB:2087756.2087764}. Furthermore, the user/presenter might feel less in control of the data, even if you neglect the accuracy of the tracking, because he is not directly touching the display surface. However, the movements are often expressive and can therefore clearly be seen by the audience during a presentation.
 
-Our scenario 2 includes both a direct touch and a touchless setup, and both setups have been used interactively when presenting scientific data for the same number of people, usually around 10-20. The touchless setup can support a larger audience due the shear placement of the display surface, but comes with the downsides of a decoupled user interaction experience, which performed further away from the display surface.
+Our scenario 2 includes both a direct touch and a touchless setup, and both setups have been used interactively when presenting scientific data for the same number of people, usually around 10-20. The touchless setup can support a larger audience due the shear placement of the display surface, but comes with the downsides of a decoupled user interaction experience, where the interaction is performed further away from the display surface.
 
-This type of interaction is present in scenario 2 and 3. That type of interaction setups are quite similar, however both the audience size and the display size is increased in scenario 3 when compared to scenario 2. 
+As we evaluate the interaction from an presentation perspective, and how the audience perceive it, we have separated touchless interaction into two categories, registered and unregistered gestures.
+We refer unregistered gestures to when the audience see that the presenter is not touching the display directly. 
+In contrary, a registered gesture could be touchless if the audience perceive it as it could by a gesture performed directly on the display surface, which is the fact with all gesture on a touch screen.
+With that in mind, the most of the audience in the touchless setup in scenario 2 will look upon the display and the gestures performed by the presenter as unregistered gestures.
+In a presentation sense, we can easily argue that registered gestures is preferable before unregistered gestures.
+ 
+However, when a decoupled approach is necessary certain elements can be introduced in order to help the audience. As seen in figure \ref{img:exhibition_kinect}, a hand cursor is rendered which simulates the projection of the presenters hand onto the surface. Such visual cues not only help the presenters, but also allow a wider understanding for the audience to comprehend what operation the user is currently expressing, as they can correlate position of the the display to see where the user hand is located in relation to the display.
+Furthermore, the icons in the bottom are not only introduced to avoid a increase in the quantity and complexity of gestures for different operations, but also to make the operations performed more in contact with the visualization. To clarify, when the user is moving is hand towards on icon, audience perceive better that something is about to happen, then if the user would perform the same operation through a gesture or a posture \cite{isenberg:hal-00781237}.
 
+However, our observation did show that these elements did bridge the gap between registered and unregistered gestures to an extent that touchless was as suitable as direct touch for an audience size where everyone could see the gestures and the visualization properly on the touch table.
 
+This type of interaction is also present in scenario 3. That type of touchless interaction setup is quite similar, however both the audience size and the display size is now increased substantially. At these display and audience sizes it becomes clear that registered gestures would not be possible, as the presenter could not access the complete display surface with his hands.
 
-
-However, when a decoupled approach is necessary certain elements can be introduced in order to help the audience.
-Such as projecting the hand onto the viewing surface.
-
-As seen in figure \ref{img:exhibition_kinect}, which is a picture of scenario 2, a hand cursor is rendered which simulates the projection of the presenters hand onto the surface. Such visual cues not only help the presenters, but also allow a wider understanding for the audience to comprehend what operation the user is currently expressing, as they can correlate position of the the display to see where the user hand is located in relation to the display. Furthermore, the icons in the bottom are not only introduced to avoid a increase in the quantity and complexity of gestures for different operations, but also to make the operations performed more in contact with the visualization. To clarify, when the user is moving is hand towards on icon, audience perceive better that something is about to happen, then if the user would perform the same operation through a gesture.
-
-Interactive Slice WIM \cite{Coffey:2012:ISW:2360744.2360843}
+Furthermore, seen from a presentation perspective, the touchless gestures in our setup is more expressive then what direct touch gestures on a tablet or a touch table would be. Thus, the touchless setup could be considered as a better presentation tool then utilizing a touch device for remote communication, as done by Coffey et al \cite{Coffey:2012:ISW:2360744.2360843}.
 
 Touching the 3rd dimension \cite{DBLP:journals/dagstuhl-reports/KeefeKSR12}
 
 %Evaluation of Gesture \cite{Kirmizibayrak:2011:EGB:2087756.2087764}
 
-Discuss gesture vs postures \cite{isenberg:hal-00781237} for kinect, and gesture available for both touch and kinect.
+%Discuss gesture vs postures \cite{isenberg:hal-00781237} for kinect, and gesture available for both touch and kinect.
 
-Mouse vs Kinect vs Leap vs Myo \cite{doi:10.1117/12.2006994}. \todo{I would like to see a paragraph somewhere saying that the actual technology does not matter for the interaction, as there is no big difference between a kinect or a leap motion, for example. (ab)}
+%Mouse vs Kinect vs Leap vs Myo \cite{doi:10.1117/12.2006994}. \todo{I would like to see a paragraph somewhere saying that the actual technology does not matter for the interaction, as there is no big difference between a kinect or a leap motion, for example. (ab)}
 
 \subsection{Voice}
 
