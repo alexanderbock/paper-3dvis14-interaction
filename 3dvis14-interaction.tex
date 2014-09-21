@@ -194,7 +194,13 @@ Towards Analysis of Expressive Gesture in Groups of Users \cite{978-3-642-12552-
 \section{Scenario: Presentation on workstation}
 
 This scenario deals the situation when the presentation is performed on a small screen, such as a tablet or desktop monitor, and the audience consists of a few people. 
-The distance between the audience and the presenter is typically small and allows for a tight communication between the two parts. The audience can easily communicate preferences in what to explore and may in some cases even intervene with the presenter to interact with the visualization. An intuitive interaction can therefore engage the audience and create a more dynamic presentation. An example can be seen in~\cref{img:touch_workstation}, where the presenter uses a touch screen or touchpad to interact with a fetus scanned using ultrasound. The standard interaction mode is camera interaction, such as rotation, translation and zooms a one finger touch or multiple finger gestures. The presenter can in this case switch to different modes, utilizing the keyboard, to control other behaviors of the visualization. For instance, another mode will change the interpretation of the single finger touch such that the threshold and opacity of the mapping between data and colors are changed according to the horizontal and vertical movement.
+The distance between the audience and the presenter is typically small and allows for a tight communication between the two parts.
+The audience can easily communicate preferences in what to explore and may in some cases even intervene with the presenter to interact with the visualization.
+An intuitive interaction can therefore engage the audience and create a more dynamic presentation.
+An example can be seen in~\cref{img:touch_workstation}, where the presenter uses a touch screen or touchpad to interact with a fetus scanned using ultrasound.
+The standard interaction mode is camera interaction, such as rotation, translation and zooms a one finger touch or multiple finger gestures.
+The presenter can in this case switch to different modes, utilizing the keyboard, to control other behaviors of the visualization.
+For instance, another mode will change the interpretation of the single finger touch such that the threshold and opacity of the mapping between data and colors are changed according to the horizontal and vertical movement.
 
 %This scenario deals with small screens and 
 %User-centered...
@@ -216,11 +222,23 @@ The distance between the audience and the presenter is typically small and allow
 
 \section{Scenario: Presentations in Exhibition Area}
 
-In an exhibition area there is often both small to medium sized displays utilized to showcase and explore the scientific data. Furthermore, there is mostly none experience users and viewers present which interact and view others interact with the scientific data. There are a wide range of setups with certain displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area, such as \cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}. What they all have in common when it comes to this scenario is that naturalness of the interaction is highly important, as their will be many none experienced users using the interaction techniques. That fact, together with a reasonable level of functionality motivates the usage of hands-only setup, trough direct touch \cite{Klein:2012:DSD:2322389.2322403} and touchless methods \cite{O'hara:2013:NTP:2442106.2442111}.
+In an exhibition area there is often both small to medium sized displays utilized to showcase and explore the scientific data.
+Furthermore, there is mostly none experience users and viewers present which interact and view others interact with the scientific data.
+There are a wide range of setups with certain displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area, such as \cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}.
+What they all have in common when it comes to this scenario is that naturalness of the interaction is highly important, as their will be many none experienced users using the interaction techniques.
+That fact, together with a reasonable level of functionality motivates the usage of hands-only setup, through direct touch \cite{Klein:2012:DSD:2322389.2322403} and touchless methods \cite{O'hara:2013:NTP:2442106.2442111}.
 
-In figure \ref{img:exhibition_table} we see an exhibition setup example, known as an autopsy table \cite{LRFPY11}, where data such as a CT scan of a human can be explored in a close to true scale environment, using direct touch and multi-touch gestures. Rotation of the object is done with a one finger trough an up and down movement, translation is performed with a one finger side-to-side sweeping and zoom with a two-finger pinch gesture. Various 2D icons are rendered around the visualization for switching states and presenting relevant information about the data. There are also gripping points for change clipping and transparency level within the visualization.
+In figure \ref{img:exhibition_table} we see an exhibition setup example, known as an autopsy table \cite{LRFPY11}, where data such as a CT scan of a human can be explored in a close to true scale environment, using direct touch and multi-touch gestures.
+Rotation of the object is done with a one finger through an up and down movement, translation is performed with a one finger side-to-side sweeping and zoom with a two-finger pinch gesture.
+Various 2D icons are rendered around the visualization for switching states and presenting relevant information about the data.
+There are also gripping points for change clipping and transparency level within the visualization.
 
-In a sense it is just an increased version of a tablet, but suitable for a larger audience, as the area surrounding the table is significantly larger. However, the larger the touch display surface is, the more the presenter has to move around. With this in mind, the naturalness of the interaction for the user would benefit from as close to real life movements as possible, to support the true scale visualization. This is of course a challenge for direct touch displays, as there is a 2D instead of a 3D user experience. However, it can be considered a commonly known practice how to interact with touch displays, trough common gestures such as pinch and swipe. As high-resolution accurate touch screens are available today, this type of setup is very appreciated for both the user and the audience.
+In a sense it is just an increased version of a tablet, but suitable for a larger audience, as the area surrounding the table is significantly larger.
+However, the larger the touch display surface is, the more the presenter has to move around.
+With this in mind, the naturalness of the interaction for the user would benefit from as close to real life movements as possible, to support the true scale visualization.
+This is of course a challenge for direct touch displays, as there is a 2D instead of a 3D user experience.
+However, it can be considered a commonly known practice how to interact with touch displays, through common gestures such as pinch and swipe.
+As high-resolution accurate touch screens are available today, this type of setup is very appreciated for both the user and the audience.
 
 \begin{figure}[htb]
 	\centering
@@ -229,7 +247,12 @@ In a sense it is just an increased version of a tablet, but suitable for a large
 	\label{img:exhibition_table}
 \end{figure}
 
-The setup in figure \ref{img:exhibition_kinect} is similar to figure \ref{img:exhibition_table} in terms of exploring data in true scale. However, we now have a display surface without direct touch, which is instead coupled with hand tracking. This setup can support a larger audience due the shear placement of the display surface, but comes with the downsides of a decoupled user interaction experience, which performed further away from the display surface. The visualization is also supported by state icons, which is this case determine either a 3D dataset of a bear, moose or penguin is loaded. Furthermore, a hand cursor is rendered onto the screen which correspond to the projection of the right hand onto the screen \todo{Develop this further in Large Audience section with the rendering of 3D arms....}. The left hand is utilized to switch to different states such a camera or light source interaction.
+The setup in figure \ref{img:exhibition_kinect} is similar to figure \ref{img:exhibition_table} in terms of exploring data in true scale.
+However, we now have a display surface without direct touch, which is instead coupled with hand tracking.
+This setup can support a larger audience due the shear placement of the display surface, but comes with the downsides of a decoupled user interaction experience, which performed further away from the display surface.
+The visualization is also supported by state icons, which is this case determine either a 3D dataset of a bear, moose or penguin is loaded.
+Furthermore, a hand cursor is rendered onto the screen which correspond to the projection of the right hand onto the screen \todo{Develop this further in Large Audience section with the rendering of 3D arms....}.
+The left hand is utilized to switch to different states such a camera or light source interaction.
 
 \begin{figure}[htb]
 	\centering
@@ -238,18 +261,12 @@ The setup in figure \ref{img:exhibition_kinect} is similar to figure \ref{img:ex
 	\label{img:exhibition_kinect}
 \end{figure}
 
-\section{(Alex) Scenario: Large Audience Presentation}
+\section{Scenario: Large Audience Presentation}
 
-\noindent \textbf{Oral Presentation} Being the most traditional form of 1 to many presentation techniques, oral presentations have been around since time immemorial.
-While they were restricted to a lecturer talking to the audience in the beginning, over time more and more tools and techniques have been added to improve the information transfer to the audience.
-Adding a blackboard allows the presenter to construct a visual representation of the information he is conveying while he is explaining the subject matter.
-In these early forms, the audience is witness to the construction and can follow the construction as it happens, thus increasing the knowledge transfer as compared to after-the-fact representations [citation needed].
-Nowadays, the blackboard has been replaced with a whiteboard or alternatively a slide presentation, but the fundamental principle has not changed since the beginning.
-This can be seen in the fact that must slide shows still follow the tradition of constructing the explanations in a linear form and are fairly standardized for each field [citation from Vis 2012].
-
-A prime example of an enhanced oral presentation technique in which the interaction technique matters a great deal is medical schools' education based on cadavers.
-In these settings, a lecturer dissects a cadaver live in front of students in order to teach them about a specific subject of the human body.
-Here, not only the content is of importance to the audience, but also the individual steps of how the presenter interacts with the body as this is one of the foci of study.
+\noindent Being the most traditional form of presentation techniques, oral presentations have been around since time immemorial.
+While they were limited to a lecturer talking initially, tools and techniques have been added to improve this presentation mode.
+A prime example of an enhancement, in which the interaction technique matters a great deal, is medical schools' education based on the dissection of cadavers in class.
+Here, not only the presented content is important, but also the way the lecturer interacts with the body as this is one of the foci of study.
 While the previous example supports, in theory, an unlimited audience size, the medical example is limited by the fact that every audience member has to see the presenter and cadaver.
 We found that this simple restriction is present in many interaction techniques that we investigated.
 Being able to see and understand the movements and gestures of the presenter is important for understanding the information that is conveyed.
@@ -364,7 +381,7 @@ Mouse vs Kinect vs Leap vs Myo \cite{doi:10.1117/12.2006994}. \todo{I would like
 
 Moving hands freely in the air allows expressive gestures to be created without being restricted to 2D motion as in the case for the direct touch interaction. However, recognizing when a gesture starts and ends can be difficult since there is no natural deactivation state. Furthermore, the user might feel less in control of the data, even if you neglect the accuracy of the tracking, because he is not directly touching the display surface. However, the movements are often expressive and can therefore clearly be seen by the audience during a presentation. 
 
-As seen in figure \ref{img:exhibition_kinect}, a hand cursor is rendered which simulates the projection of the users hand onto the surface. Such visual cues not only help the user, but also allow a wider understanding for the audience to comprehend what operation the user is currently performing, as they only need to look at the display to see where the user hand is located in relation to the display. Furthermore, the icons in the bottom are not only introduced to avoid a increase in the quantity and complexity of gestures for different operations, but also to make the operations performed more in contact with the visualization. To clarify, when the user is moving is hand towards on icon, audience perceive better that something is about to happen, then if the user would perform the same operation trough a gesture.
+As seen in figure \ref{img:exhibition_kinect}, a hand cursor is rendered which simulates the projection of the users hand onto the surface. Such visual cues not only help the user, but also allow a wider understanding for the audience to comprehend what operation the user is currently performing, as they only need to look at the display to see where the user hand is located in relation to the display. Furthermore, the icons in the bottom are not only introduced to avoid a increase in the quantity and complexity of gestures for different operations, but also to make the operations performed more in contact with the visualization. To clarify, when the user is moving is hand towards on icon, audience perceive better that something is about to happen, then if the user would perform the same operation through a gesture.
 
 Kinect dicom \cite{zora82163}
 
