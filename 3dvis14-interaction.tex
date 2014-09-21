@@ -147,49 +147,38 @@ In this position paper we discuss the usage of various interaction technologies,
 
 \begin{document}
 
-%% the only exception to this rule is the \firstsection command
-%\firstsection{Introduction}\label{sec:introduction}
-
-%% The ``\maketitle'' command must be the first command after the
-%% ``\begin{document}'' command. It prepares and prints the title block.
 \maketitle
 
 \section{Introduction}\label{sec:introduction}
-Different types of interaction within visualization have in recent years become increasingly common due to the introduction of low-cost interaction devices.
-Since a couple of years it is no longer obvious that a mouse and keyboard will be used as the main type of interaction. 
-Touch screens are now de-facto standard for phones and tablets while low-cost solutions for touchless interaction, such as the Kinect, has inspired a range of applications \cite{zora82163, OHaraGSPVMCCRDC14}.
-Much focus has been on the level of interaction expertise of the user to determine if the type of interaction is suitable for a certain scenario \cite{DBLP:journals/tvcg/YiKSJ07}. What has not recieved much attention before is that the type of interaction used also affects the impact of the presentation and is therefore also part of it. If the audience can infer what will happen by the interaction it can help them follow the flow of the presentation and thus have a huge impact on well they understand the presentation.
+In recent years, different types of interaction have become increasingly common in visualization due to the introduction of low-cost interaction devices.
+This changes the paradigm that a mouse and keyboard are used as the main type of interaction in all kinds of scenarios.
+Touch screens are now the de-facto standard for handheld devices, while low-cost solutions for touchless interaction, such as the Kinect or Leap Motion, have inspired a range of applications \cite{zora82163, OHaraGSPVMCCRDC14}.
+Much focus has been placed on the user's interaction expertise to determine if a type of interaction is suitable for a certain scenario \cite{DBLP:journals/tvcg/YiKSJ07}.
+Yes, there has not been much attention on the fact that the type of interaction is also part of the presentation and therefore affects the audience.
+If the audience can infer what will happen by witnessing the interaction, it has a huge influence on their understanding of the presentation.
 
-An analogy can be made with the visualization community, which commonly classifies the use of visualization into exploration, analysis and presentation. Each usecase typically requires a different approach and tools. 
-While the exploration phase requires a flexible interaction with the visualization, the presentation phase is scaled down such that only a few parameters can be altered or for example a pre-determined animation is used. Thus, the creator can control what should be viewed and make the visualization more understandable to the audience.
-This distinction has to our knowledge not been done for interaction and we will in this manuscript focus on the use of interaction for presentation purposes.
+We can draw an analogy to the visualization community, which commonly separates the use of visualization into exploration, analysis and presentation steps, applying different approaches and tools for each step.
+While the exploration phase requires a flexible interaction, the presentation phase is limited to a few select parameters.
+The interface designer controls what can be viewed and thus make the visualization more understandable for the audience.
+The distinction between interaction techniques used for exploration as compared to presentation has, to our knowledge, not been done for interaction and we will focus on the use of interaction for presentation purposes in the presence of an audience.
 
-For instance, significant parameters for good interaction within communication is how expressible and natural the gestures and speech is when interacting with people, and while many studies focus on analyzing these aspects for direct interaction \cite{978-3-642-12552-2, Caridakis:2013:NIE:2504335.2504378}, we argue, that the importance of this could play a significant role for what we deem as indirect interaction, which in many of our presentations consist of interacting with a visualization in front of an audience.
+Important parameters measuring good interaction techniques within communication with people is how expressive and natural the gestures and speech is.
+While many studies focus on analyzing these aspects for direct interaction \cite{978-3-642-12552-2, Caridakis:2013:NIE:2504335.2504378}, we argue that this also plays a significant role in what we call indirect interaction, in which the interaction with a visualization happens in front of, and for, an audience.
+Apart from controlling a visualization, the expressivity and naturalness of gestures also influence the knowledge transfer from the presenter to the audience.
+``Magic'' gestures used for a surprising effect are appealing for entertainment-focused presentations, but in general natural and understandable gestures are more appropriate in scientific contexts.
 
-The intended use of the application and the place where it is located are also of great importance, for evaluating the usefulness of an interaction method.
-We will therefore utilize scenarios, which comes from our previous experiences and involve one or more people interacting with a visualization in order to present information to an audience that may consist of a single person or many people.
-  
-We will draw examples from scientific visualization where the presenter is not simply switching slides but is trying to tell a story about the data being visualized. \todo{Example (ab)}
-Typical parameters that are altered include the moving the camera (i.e. rotate, translate and zoom), cropping the data set in order to reveal information inside and applying different type of filters such as a threshold to hide undesirable information. \todo{Do classes of interaction methods exist, rather than giving examples? (ab)}
-We will show examples on how these parameters can be changed for touch and touchless interaction and discuss our experience in using them in different settings, with respect to size of screen and audience, for presentation purposes. \todo{Which parameters? (ab)}
+The expressivity of a specific interaction method depends heavily on the screen sizes and the audience sizes.
+We will therefore utilize scenarios from our experience that involve one person interacting with a visualization in order to present information to a, in general non-expert, audience (see Section~\ref{sec:scenario}).
+The scenarios cover different situations with varying audience sizes and show the resulting constraints on the interaction design.
+Typical parameters that are altered in these scenarios include the moving the camera, cropping the data set or applying different type of filters to the data.
 
-\todo{Explain the read thread, which should be why we setup scenarios, and then extract interaction method and then classify them in a new way. Which should show why the classfication of audience/display matters.}
+Based on these scenarios, we derive classes of interaction techniques and investigate their attributes related to expressivity for the audience (see Section~\ref{sec:techniques}).
+For each class, the applicability and usefulness for different audience sizes is investigated and discussed.
+Section~\ref{sec:classification} reevaluates the presented scenarios in the same framework and connects the scenarios with the derived classes.
 
-\todo{Make clear that this is important as the audience correlation between the interaction and visualization might be vital for there understanding of what's going on. The wow-factor for impressing people with something they don't understand belongs in the entertainment industry, not the scientific industry. The interaction should appear natural, not magical.}
 
-%While we comment on expert viewers, the focus this paper is on none expert viewers, together with either an expert or none expert user. Our definition of expert is a person which is familiar within the area of volume data exploration.
-%
-%....Touchless 3D interaction (kinect) vs touch screen 2D interaction....different scenarios such as slicing, clipping, zooming in 2D and 3D visualization of medical volume data.
-%\todo{Point out: Interaction is part of the presentation}
-
-%Using an object such as a mouse, can be useful both in 2D and 3D movements.
-%
-%If the user has training with a certain device coupled with a specific application, the expert user may certainly benefit from the type of interaction instead of hands-only interaction. \todo{I would leave this out completely as it does not matter to the content of presentation (ab)}
-%
-%However, for a none expert, which is the focus of this paper, a mouse/joystick offers unnatural ways of exploring the scientific data, as the hands are not directly interacting with the visualization of the data. \todo{Again, we don't consider the "naturality" of the interaction (ab)}
-
-\section{Scenario: Presentation on workstation}
-
+\section{Scenarios} \label{sec:scenario}
+\subsection{Presentation on workstation}
 This scenario deals the situation when the presentation is performed on a small screen, such as a tablet or desktop monitor, and the audience consists of a few people. 
 The distance between the audience and the presenter is typically small and allows for a tight communication between the two parts.
 The audience can easily communicate preferences in what to explore and may in some cases even intervene with the presenter to interact with the visualization.
@@ -217,8 +206,7 @@ For instance, another mode will change the interpretation of the single finger t
 	\label{img:touch_workstation}
 \end{figure}
 
-\section{Scenario: Presentations in Exhibition Area}
-
+\subsection{Presentations in Exhibition Area}
 In an exhibition area there is often both small to medium sized displays utilized to showcase and explore the scientific data.
 Furthermore, there is mostly none experience users and viewers present which interact and view others interact with the scientific data.
 There are a wide range of setups with certain displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area, such as \cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}.
@@ -257,8 +245,7 @@ The left hand is utilized to switch to different states such a camera or light s
 	\label{img:exhibition_kinect}
 \end{figure}
 
-\section{Scenario: Large Audience Presentation}
-
+\subsection{Scenario: Large Audience Presentation}
 \noindent \textbf{Oral Presentation} Being the most traditional form of presentation techniques, oral presentations have been around since time immemorial.
 While they were limited to a lecturer talking initially, tools and techniques have been added to improve this presentation mode.
 A prime example of an enhancement, in which the interaction technique matters a great deal, is medical schools' education based on the dissection of cadavers in class.
@@ -351,7 +338,7 @@ This natural, gesture-free interaction has been proved very useful in the workfl
 %	\label{img:dome_tf_change}
 %\end{figure}
 
-\section{Interaction techniques from the scenarios}
+\section{Interaction techniques from the scenarios} \label{sec:techniques}
 
 So far, not every possible technique suited for the scenarios is covered. However, finding the most suitable technique for our different scenarios is not the focus of our position paper, but rather we propose a way to think about interaction methods dependent on the scenario. In this section we summarize the method of interaction which are part of our previously described scenarios. Furthermore, we discuss there applicability to our scenarios.
 
@@ -396,7 +383,7 @@ Mouse vs Kinect vs Leap vs Myo \cite{doi:10.1117/12.2006994}. \todo{I would like
 
 \subsection{Voice}
 
-\section{Classification}
+\section{Classification} \label{sec:classification}
 
 To further show when a certain interaction technique is preferable from an expressiveness to audience point of view we introduce a classification of the techniques covered in our scenarios. The chart show the relevance of the technique in relation to audience and display size. It should be noted, that while a technique usage relevance is highly dependent on the scenarios and might be less suitable in when it comes to different scenarios.
 
