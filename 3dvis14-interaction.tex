@@ -157,15 +157,18 @@ In this position paper we discuss the usage of various interaction technologies,
 \section{Introduction}\label{sec:introduction}
 Different types of interaction within visualization have in recent years become increasingly common due to the introduction of low-cost interaction devices.
 Since a couple of years it is no longer obvious that a mouse and keyboard will be used as the main type of interaction. 
-Touch screens are now de-facto standard for phones and tablets while low-cost solutions for touchless interaction, such as the Kinect, has inspired a range of applications. 
-Much focus has been on the level of interaction expertise of the user to determine if the type of interaction is suitable for a certain scenario. What has not recieved much attention before is that the type of interaction used also affects the impact of the presentation and is therefore also part of it. If the audience can infer what will happen by the interaction it can help them follow the flow of the presentation and thus have a huge impact on well they understand the presentation.
+Touch screens are now de-facto standard for phones and tablets while low-cost solutions for touchless interaction, such as the Kinect, has inspired a range of applications \cite{zora82163, OHaraGSPVMCCRDC14}.
+Much focus has been on the level of interaction expertise of the user to determine if the type of interaction is suitable for a certain scenario \cite{DBLP:journals/tvcg/YiKSJ07}. What has not recieved much attention before is that the type of interaction used also affects the impact of the presentation and is therefore also part of it. If the audience can infer what will happen by the interaction it can help them follow the flow of the presentation and thus have a huge impact on well they understand the presentation.
 
 An analogy can be made with the visualization community, which commonly classifies the use of visualization into exploration, analysis and presentation. Each usecase typically requires a different approach and tools. 
 While the exploration phase requires a flexible interaction with the visualization, the presentation phase is scaled down such that only a few parameters can be altered or for example a pre-determined animation is used. Thus, the creator can control what should be viewed and make the visualization more understandable to the audience.
 This distinction has to our knowledge not been done for interaction and we will in this manuscript focus on the use of interaction for presentation purposes.
 
-Furthermore, the intended use of the application and the place where it is located are also of great importance. 
-We will therefore utilize scenarios, which comes from our previous experiences and involve one or more people interacting with a visualization in order to present information to an audience that may consist of a single person or many people.  
+For instance, significant parameters for good interaction within communication is how expressible and natural the gestures and speech is when interacting with people, and while many studies focus on analyzing these aspects for direct interaction \cite{978-3-642-12552-2, Caridakis:2013:NIE:2504335.2504378}, we argue, that the importance of this could play a significant role for what we deem as indirect interaction, which in many of our presentations consist of interacting with a visualization in front of an audience.
+
+The intended use of the application and the place where it is located are also of great importance, for evaluating the usefulness of an interaction method.
+We will therefore utilize scenarios, which comes from our previous experiences and involve one or more people interacting with a visualization in order to present information to an audience that may consist of a single person or many people.
+  
 We will draw examples from scientific visualization where the presenter is not simply switching slides but is trying to tell a story about the data being visualized. \todo{Example (ab)}
 Typical parameters that are altered include the moving the camera (i.e. rotate, translate and zoom), cropping the data set in order to reveal information inside and applying different type of filters such as a threshold to hide undesirable information. \todo{Do classes of interaction methods exist, rather than giving examples? (ab)}
 We will show examples on how these parameters can be changed for touch and touchless interaction and discuss our experience in using them in different settings, with respect to size of screen and audience, for presentation purposes. \todo{Which parameters? (ab)}
@@ -173,12 +176,6 @@ We will show examples on how these parameters can be changed for touch and touch
 \todo{Explain the read thread, which should be why we setup scenarios, and then extract interaction method and then classify them in a new way. Which should show why the classfication of audience/display matters.}
 
 \todo{Make clear that this is important as the audience correlation between the interaction and visualization might be vital for there understanding of what's going on. The wow-factor for impressing people with something they don't understand belongs in the entertainment industry, not the scientific industry. The interaction should appear natural, not magical.}
-
-Toward a Deeper Understanding of the Role of Interaction in Information Visualization \cite{DBLP:journals/tvcg/YiKSJ07}
-
-Natural Interaction Expressivity Modeling and Analysis \cite{Caridakis:2013:NIE:2504335.2504378}
-
-Towards Analysis of Expressive Gesture in Groups of Users \cite{978-3-642-12552-2}
 
 %While we comment on expert viewers, the focus this paper is on none expert viewers, together with either an expert or none expert user. Our definition of expert is a person which is familiar within the area of volume data exploration.
 %
@@ -379,10 +376,6 @@ Moving hands freely in the air allows expressive gestures to be created without 
 
 As seen in figure \ref{img:exhibition_kinect}, a hand cursor is rendered which simulates the projection of the users hand onto the surface. Such visual cues not only help the user, but also allow a wider understanding for the audience to comprehend what operation the user is currently performing, as they only need to look at the display to see where the user hand is located in relation to the display. Furthermore, the icons in the bottom are not only introduced to avoid a increase in the quantity and complexity of gestures for different operations, but also to make the operations performed more in contact with the visualization. To clarify, when the user is moving is hand towards on icon, audience perceive better that something is about to happen, then if the user would perform the same operation through a gesture.
 
-Kinect dicom \cite{zora82163}
-
-Kinect operation \cite{OHaraGSPVMCCRDC14}
-
 Interactive Slice WIM \cite{Coffey:2012:ISW:2360744.2360843}
 
 %Touchless surgery \cite{Mentis:2012:IPI:2207676.2208536}
@@ -419,9 +412,7 @@ There are more advanced classification methods for interaction techniques \cite{
 
 \section{Conclusions}\label{sec:conclusion}
 
-We have in previous sections detailed presentation scenarios which require interaction and how what are utilized today within these scenarios.
-
-As noted by the structure of this paper, not all interaction methods available are covered, as there are countless others, which for instance involve hand-held devices. And in the same aspect, not all scenarios where interaction is suitable is covered. However, such as evaluation would be extensive to perform in practice, and as different scenarios change the usefulness of a interaction type, we believe that in order to get as accurate conclusions as possible in an evaluation, only a few interaction techniques per scenario should be compared. Furthermore, showing the importance of different interaction types paired with different scenarios is in our view beneficial for the reason that either new interaction solution or new scenarios could be pre-classified in the classification we have made, before a more comprehensive study on suitable interaction for that specific scenario.
+We have in previous sections detailed presentation scenarios which require interaction and how what are utilized today within these scenarios. As noted, not all interaction methods available are covered, as there are countless others which for instance involve hand-held devices. And in the same aspect, not all scenarios where interaction is suitable is covered. Such as evaluation would be extensive to perform in practice, and as different scenarios change the usefulness of a interaction type, we believe that in order to get as accurate conclusions as possible in an evaluation, only a few interaction techniques per scenario should be compared. Furthermore, showing the importance of different interaction types paired with different scenarios is in our view beneficial for the reason that either new interaction methods or new scenarios could be pre-classified in the current classification we have produced, before a more comprehensive study on suitable interaction for that specific scenario can be performed.
 
 There is no surprise that a decoupled interaction approach is often less intuitive then one which the viewing surface and interaction area is the same.
 However, when a decoupled approach is necessary certain elements can be introduced in order to help the audience.
