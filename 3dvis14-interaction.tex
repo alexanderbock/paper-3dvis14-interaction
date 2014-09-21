@@ -186,7 +186,7 @@ We do not claim to cover all possible presentation cases in this section, yet we
 
 %
 %
-\subsection{Presentation on workstation}
+\subsection{Presentation on workstation} \label{sec:workstation}
 In this scenario, the presentation is performed on a small screen, either handheld or desktop monitor, and the audience usually consists of a single person or a small group.
 As this setup will be most familiar to readers, we keep the description of this section purposefully concise.
 The distance between the audience and the presenter is typically small and allows for a close communication.
@@ -215,7 +215,7 @@ For instance, another mode will change the interpretation of the single finger t
 	\label{img:touch_workstation}
 \end{figure}
 
-\subsection{Presentations in Exhibition Area}
+\subsection{Presentations in Exhibition Area} \label{sec:exhibition}
 In a public exhibition area, both small to medium sized displays are often utilized to showcase and explore scientific data.
 Furthermore, it is mostly targeted at non-expert users and viewers that interact and see others interact, which requires intuitive and natural input methods.
 There exist a wide range of setups with displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area~\cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}.
@@ -254,7 +254,7 @@ The left hand is tracked and utilized to switch between different rendering stat
 	\label{img:exhibition_kinect}
 \end{figure}
 
-\subsection{Scenario: Large Audience Presentation}
+\subsection{Scenario: Large Audience Presentation} \label{sec:largeaudience}
 \noindent \textbf{Oral Presentation} Being the most traditional form of presentation techniques, oral presentations have been around since time immemorial.
 While they were limited to a lecturer talking initially, tools and techniques have been added to improve this presentation mode.
 A prime example of an enhancement, in which the interaction technique matters a great deal, is medical schools' education based on the dissection of cadavers in class.
@@ -348,43 +348,51 @@ This natural, gesture-free interaction has been proved very useful in the workfl
 %\end{figure}
 
 \section{Interaction techniques from the scenarios} \label{sec:techniques}
-
-So far, not every possible technique suited for the scenarios is covered. However, finding the most suitable technique for our different scenarios is not the focus of our position paper, but rather we propose a way to think about interaction methods dependent on the scenario. In this section we summarize the method of interaction which are part of our previously described scenarios. Furthermore, we discuss there applicability to our scenarios.
+Covering every possible technique best suited for the scenarios is outside the scope of this paper.
+Instead, we propose a way to think about the interaction techniques directly derived from the scenarios.
+In this section, we summarize the interaction methods that are part of our scenarios and discuss their applicability.
 
 \subsection{Direct Touch Interaction}
-Direct interaction with an object in the scene gives the user a feel of control of the object~\cite{isenberg2009studying}. 
-The user touches the screen and the 2D motion is mapped to a 3D manipulation of the object. 
-Touch interaction in scientific visualization has not received much attention in the past \cite{isenberg:hal-00781512}, 
-but more work is starting to appear~\cite{Klein:2012:DSD:2322389.2322403} and it has already been used in applications~\cite{LRFPY11}.
-This type of interaction is present in scenario 1 and 2, where different sized touch screens are utilized. 
-When analyzing this interaction type from a presentation perspective, the audience can see the movements of the presenters hands and fingers and thereby get an understanding of what will happen on the screen.
-Furthermore, there is little distance between the interaction and the display surface and thus spatial related interaction events should be well perceived.
-However, the presenter will also hide part of the screen due to the occluding hands and arms.
-Furthermore, when the audience grows larger it may be hard to see the gestures.
+Direct interaction with an object in the scene gives the user a feel of control over the object~\cite{isenberg2009studying}. 
+The user touches the screen and the 2D motion is mapped to a 3D manipulation of the object usually by mimicking the interaction of a trackball.
+In scientific visualization, touch interaction has not received much attention in the past \cite{isenberg:hal-00781512}, but more work is starting to appear~\cite{Klein:2012:DSD:2322389.2322403} and it has already been used in applications~\cite{LRFPY11}.
+This type of interaction is present in scenarios \ref{sec:workstation} and \ref{sec:exhibition}, where different sized touch screens are utilized. 
+When analyzing this interaction type from a presentation perspective, the audience can see the movements of the presenters' hands and fingers and, through that, get an understanding of what will happen on the screen.
+Furthermore, there is little distance between the interaction plane and the display surface and, thus, spatially correlated interaction events are well perceived.
+However, the presenter also hides part of the screen due to the occluding hands and arms.
+Furthermore, when the audience grows larger it becomes harder for every audience member to see the gestures.
 
 %Importance of Touch \cite{Robles-De-La-Torre:2006:IST:1158827.1159097}
 
 \subsection{Touchless Interaction}
-Touchless interaction has been found useful in situations such as surgery~\cite{Mentis:2012:IPI:2207676.2208536} where touching an interaction device is cumbersome or should be avoided.
-Moving hands freely in the air allows expressive gestures to be created without being restricted to 2D motion as in the case for the direct touch interaction. However, recognizing when a gesture starts and ends can be difficult since there is no natural deactivation state \cite{Kirmizibayrak:2011:EGB:2087756.2087764}. Furthermore, the user/presenter might feel less in control of the data, even if you neglect the accuracy of the tracking, because he is not directly touching the display surface. However, the movements are often expressive and can therefore clearly be seen by the audience during a presentation.
+Touchless interaction is useful in situations such as surgery~\cite{Mentis:2012:IPI:2207676.2208536} where touching an interaction device is cumbersome or must be avoided due to hygienic constraints.
+Moving hands freely in the air allows expressive gestures without being restricted to 2D motion as in the case of direct touch interaction.
+However, recognizing the start and end point of a gesture can be difficult since there is no natural deactivation state \cite{Kirmizibayrak:2011:EGB:2087756.2087764}.
+Furthermore, the user/presenter might feel less in control of the data, even neglecting the accuracy of the tracking, as he is not directly touching the display surface.
+However, the movements are often expressive and can therefore clearly be seen by the audience during a presentation.
 
-Our scenario 2 includes both a direct touch and a touchless setup, and both setups have been used interactively when presenting scientific data for the same number of people, usually around 10-20. The touchless setup can support a larger audience due the shear placement of the display surface, but comes with the downsides of a decoupled user interaction experience, where the interaction is performed further away from the display surface.
+Our scenario \ref{sec:exhibition} includes both a direct touch and a touchless setup, and both setups have been used interactively when presenting scientific data for the same group, usually consisting of around 10-20 people.
+The touchless setup can support a larger audience due the placement of the display surface, but has the downside of a decoupled user interaction experience, where the interaction is performed further away from the display surface.
 
-As we evaluate the interaction from an presentation perspective, and how the audience perceive it, we have separated touchless interaction into two categories, registered and unregistered gestures.
-We refer unregistered gestures to when the audience see that the presenter is not touching the display directly. 
-In contrary, a registered gesture could be touchless if the audience perceive it as performed directly on the display surface, which is the fact with all gestures on a touch screen.
-With that in mind, most of the audience in the touchless setup in scenario 2 will look upon the display and the gestures performed by the presenter as unregistered gestures.
-In a presentation sense, we can easily argue that registered gestures is preferable before unregistered gestures.
+As we evaluate the interaction from an presentation perspective, and how the audience perceive it, we have separated touchless interaction into two categories; registered and unregistered gestures.
+We refer \emph{unregistered gestures} when the audience sees that the presenter is not touching the display directly. 
+In contrary, a \emph{registered gesture} could be touchless if the audience perceive it as performed directly on the display surface, which is the fact with all gestures on a touch screen.
+With that in mind, most of the audience in the touchless setup in scenario \ref{sec:exhibition} will look upon the display and the gestures performed by the presenter as unregistered gestures.
+In a presentation sense, we argue that registered gestures is preferable before unregistered gestures.
  
-However, when a decoupled approach is necessary, certain elements can be introduced in order to help the audience. As seen in figure \ref{img:exhibition_kinect}, a hand cursor is rendered which simulates the projection of the presenters hand onto the surface. Such visual cues not only help the presenters, but also allow a wider understanding for the audience to comprehend what operation the presenter is currently expressing, as they can correlate where the presenters hand is located in relation to the display.
-Furthermore, the icons in the bottom are not only introduced to avoid a increase in the quantity and complexity of gestures for different operations, but also to make the operations performed more in contact with the visualization. 
-To clarify, when the user is moving is hand towards on icon, audience perceive better that something is about to happen, then if the user would perform the same operation through a gesture or a posture \cite{isenberg:hal-00781237}.
+When a decoupled interaction approach is necessary, certain elements can be introduced in order to help the audience.
+As seen in figure~\ref{img:exhibition_kinect}, a hand cursor is rendered that simulates the projection of the presenter's hand on the surface.
+Such visual cues not only help the presenter, but also allow the audience to better  comprehend which operation the presenter is currently expressing, as they can correlate the location of the presenter's hand in relation to the display.
+Furthermore, the icons in the bottom of the screen are not introduced to avoid an increase in the number of necessary gestures, but also to make the operations performed relate more directly with the visualization. 
+To clarify, when the user is moving is hand towards on icon, audience perceive better that something is about to happen compared to if the user would perform the same operation through a gesture or a posture \cite{isenberg:hal-00781237}.
 
-However, our observation did show that these elements did not bridge the gap between registered and unregistered gestures to an extent that touchless was as suitable as direct touch for an audience size where everyone could see the gestures and the visualization properly on the touch table.
+However, our observation did show that these elements did not bridge the gap between registered and unregistered gestures sufficiently so that touchless was as suitable as direct touch for an audience size where everyone could see the gestures and the visualization on the touch table.
 
-This type of interaction is also present in scenario 3. The type of touchless interaction setup is quite similar, however both the audience size and the display size has now increased substantially. At these display and audience sizes it becomes clear that registered gestures would not be possible, as the presenter can not access the complete display surface directly.
+This type of interaction is also present in scenario \ref{sec:largeaudience}. The type of touchless interaction setup is quite similar, however both the audience size and the display size is substantially increased.
+At these display and audience sizes it becomes clear that registered gestures are not possible, as the presenter can not access the complete display surface directly.
 
-Furthermore, seen from a presentation perspective, the touchless gestures in our setup is more expressive then what direct touch gestures on a tablet or a touch table would be. Thus, the touchless setup could be considered as a better presentation tool then utilizing a touch device for remote communication, as done by Coffey et al \cite{Coffey:2012:ISW:2360744.2360843}.
+Furthermore, seen from a presentation perspective, the touchless gestures in our setup is more expressive then what direct touch gestures on a handheld device or a touch table would be.
+Thus, the touchless setup could be considered as a better presentation tool then utilizing a touch device for remote communication, as done by Coffey et al \cite{Coffey:2012:ISW:2360744.2360843}.
 
 %Touching the 3rd dimension \cite{DBLP:journals/dagstuhl-reports/KeefeKSR12}
 
