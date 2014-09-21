@@ -173,19 +173,28 @@ The scenarios cover different situations with varying audience sizes and show th
 Typical parameters that are altered in these scenarios include the moving the camera, cropping the data set or applying different type of filters to the data.
 
 Based on these scenarios, we derive classes of interaction techniques and investigate their attributes related to expressivity for the audience (see Section~\ref{sec:techniques}).
+We will make the classification device-agnostic, as differences in the fundamental principles between many interaction devices in the same class are negligible.
 For each class, the applicability and usefulness for different audience sizes is investigated and discussed.
 Section~\ref{sec:classification} reevaluates the presented scenarios in the same framework and connects the scenarios with the derived classes.
 
-
+%
+%
+%
 \section{Scenarios} \label{sec:scenario}
+The scenarios described in this section are drawn from our experience in presenting scientific data to audiences of varying sizes.
+We do not claim to cover all possible presentation cases in this section, yet we selected a subset of scenarios that cover a large variety of situations.
+
+%
+%
 \subsection{Presentation on workstation}
-This scenario deals the situation when the presentation is performed on a small screen, such as a tablet or desktop monitor, and the audience consists of a few people. 
-The distance between the audience and the presenter is typically small and allows for a tight communication between the two parts.
-The audience can easily communicate preferences in what to explore and may in some cases even intervene with the presenter to interact with the visualization.
+In this scenario, the presentation is performed on a small screen, either handheld or desktop monitor, and the audience usually consists of a single person or a small group.
+As this setup will be most familiar to readers, we keep the description of this section purposefully concise.
+The distance between the audience and the presenter is typically small and allows for a close communication.
+The audience can easily communicate preferences in what to explore and may, in some cases, even intervene with the presenter to interact with the visualization.
 An intuitive interaction can therefore engage the audience and create a more dynamic presentation.
-An example can be seen in~\cref{img:touch_workstation}, where the presenter uses a touch screen or touchpad to interact with a fetus scanned using ultrasound.
-The standard interaction mode is camera interaction, such as rotation, translation and zooms a one finger touch or multiple finger gestures.
-The presenter can in this case switch to different modes, utilizing the keyboard, to control other behaviors of the visualization.
+An example can be seen in figure~\ref{img:touch_workstation}, where the presenter uses a touch screen or touchpad to interact with a ultrasound scan of a fetus.
+The standard interaction mode is camera interaction, such as rotation, translation and zoom as single finger touch or multiple finger gestures.
+The presenter can, in this case, switch to different modes, using the keyboard, to control other aspects of the visualization.
 For instance, another mode will change the interpretation of the single finger touch such that the threshold and opacity of the mapping between data and colors are changed according to the horizontal and vertical movement.
 
 %This scenario deals with small screens and 
@@ -207,36 +216,36 @@ For instance, another mode will change the interpretation of the single finger t
 \end{figure}
 
 \subsection{Presentations in Exhibition Area}
-In an exhibition area there is often both small to medium sized displays utilized to showcase and explore the scientific data.
-Furthermore, there is mostly none experience users and viewers present which interact and view others interact with the scientific data.
-There are a wide range of setups with certain displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area, such as \cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}.
-What they all have in common when it comes to this scenario is that naturalness of the interaction is highly important, as their will be many none experienced users using the interaction techniques.
-That fact, together with a reasonable level of functionality motivates the usage of hands-only setup, through direct touch \cite{Klein:2012:DSD:2322389.2322403} and touchless methods \cite{O'hara:2013:NTP:2442106.2442111}.
+In a public exhibition area, both small to medium sized displays are often utilized to showcase and explore scientific data.
+Furthermore, it is mostly targeted at non-expert users and viewers that interact and see others interact, which requires intuitive and natural input methods.
+There exist a wide range of setups with displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area~\cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}.
+That fact, together with a reasonable level of functionality motivates the usage of a hands-only setup, either through direct touch~\cite{Klein:2012:DSD:2322389.2322403} or touchless methods~\cite{O'hara:2013:NTP:2442106.2442111}.
 
-In figure \ref{img:exhibition_table} we see an exhibition setup example, known as an autopsy table \cite{LRFPY11}, where data such as a CT scan of a human can be explored in a close to true scale environment, using direct touch and multi-touch gestures.
-Rotation of the object is done with a one finger through an up and down movement, translation is performed with a one finger side-to-side sweeping and zoom with a two-finger pinch gesture.
-Various 2D icons are rendered around the visualization for switching states and presenting relevant information about the data.
-There are also gripping points for change clipping and transparency level within the visualization.
-
-In a sense it is just an increased version of a tablet, but suitable for a larger audience, as the area surrounding the table is significantly larger.
-However, the larger the touch display surface is, the more the presenter has to move around.
-With this in mind, the naturalness of the interaction for the user would benefit from as close to real life movements as possible, to support the true scale visualization.
-This is of course a challenge for direct touch displays, as there is a 2D instead of a 3D user experience.
-However, it can be considered a commonly known practice how to interact with touch displays, through common gestures such as pinch and swipe.
+Figure~\ref{img:exhibition_table} shows an exhibition setup example, known as an virtual autopsy table~\cite{LRFPY11}, where data, such as a CT scan of a human, can be explored using direct touch and multi-touch gestures.
+Rotation and translation of the object is done via vertical and horizontal movements and zoom using a two-finger pinch gesture.
+Various 2D icons are shown around the visualization for state switching and presenting relevant information about the data.
+Glyphs are used to change clipping and transparency levels within the visualization, which are also manipulated with a single finger touch.
 As high-resolution accurate touch screens are available today, this type of setup is very appreciated for both the user and the audience.
+
+Though the table resembles an increased version of a handheld device, the usability for a bigger audience is much higher, as the area surrounding the table is significantly larger.
+However, the larger the touch display surface is, the more the presenter has to move, which puts size constraints on these devices.
+With this in mind, the naturalness of the interaction for the user would benefit from as close to real life movements as possible, to support the a visualization with a scale that is true to life.
+
+Limiting the interaction to touch gestures is, of course, a challenge as there is a 2D input for a 3D environment.
+However, interaction with touch displays is so widely applied that a gesture language has been developed, using common gestures such as pinch and swipe.
 
 \begin{figure}[htb]
 	\centering
 	\fbox{\includegraphics[width=1.0\linewidth]{images/exhib_table}}
-	\caption{A touch table (known as the Autopsy Table) for scientific data presentation of, for instance, scans of humans or animals which can be viewed in close to true scale.}
+	\caption{A touch table (known as the Virtual Autopsy Table) for presentation of, for instance, CT scans that can be viewed in close to true scale.}
 	\label{img:exhibition_table}
 \end{figure}
 
-The setup in figure \ref{img:exhibition_kinect} is similar to figure \ref{img:exhibition_table} in terms of exploring data in true scale.
-However, we now have a display surface without direct touch, which is instead coupled with hand tracking.
-The visualization is also supported by state icons, which is this case determine either a 3D dataset of a bear, moose or penguin is loaded.
-Furthermore, a hand cursor is rendered onto the screen which correspond to the projection of the right hand onto the screen \todo{Develop this further in Large Audience section with the rendering of 3D arms....}.
-The left hand is utilized to switch to different states such a camera or light source interaction.
+The setup in figure~\ref{img:exhibition_kinect} is in first approximation similar to figure~\ref{img:exhibition_table} in terms of exploring data in true scale.
+However, the display surface does not have without direct touch capabilities, but instead is controlled by tracking the movements of the presenter's hands.
+The visualization is also supported by state icons, which, in this case, allow the presenter to intuitively change the data set between four presets.
+A hand cursor is rendered onto the screen that mimics the movements of the presenter's right hand.
+The left hand is tracked and utilized to switch between different rendering states such as moving the camera or light source interaction.
 
 \begin{figure}[htb]
 	\centering
