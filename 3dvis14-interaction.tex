@@ -269,14 +269,14 @@ This is a similar setup to traditional planetariums, but in our case, the conten
 While they were limited to a lecturer talking initially, tools and techniques have been added to improve this presentation mode.
 A prime example of an enhancement, in which the interaction technique matters a great deal, is medical schools' education based on the dissection of cadavers in class.
 Here, not only the presented content is important, but even more important is the way the lecturer interacts with the body.
-A limitation to this technique is the fact that every audience member has to see the presenter and cadaver.
+A limitation to this technique is the fact that every audience member has to see the presenter and the visualization.
 We found that this simple restriction is present in many interaction techniques that we investigated, as being able to see and understand the movements and gestures of the presenter is important for the audiences' understanding.
 
 A slight variant to this is the concept of remote presentations.
 In this case, the presenter is not in the same room as the intended audience, but his voice (and possible video footage) is streamed instead.
 Regarding the interaction, there is no change as the presenter's interaction with the content was limited to communication and there was no physical input necessary.
 The only visible difference to the audience is the missing presence of the presenter in the same room, which might make other, complementary, sources of interaction impossible (such as using laser pointers).
-An increase in future presence technologies will further blur the line between a physically-present presenter and a remote presenter.
+An increase in future presence technologies will presumably blur the line further between a physically-present presenter and a remote presenter.
 
 %The third setup is a curved-screen decision arena in which the audience members are located on the inside of a round room with the walls being used as projection surfaces.
 %This setup is very useful for a small group of people ($<$ 10 persons) to simultaneously work on decisions using the information projected on the surfaces.
@@ -301,9 +301,8 @@ An increase in future presence technologies will further blur the line between a
 %\end{figure}
 
 \section{Interaction techniques from the scenarios} \label{sec:techniques}
-Covering every possible technique best suited for the scenarios is outside the scope of this paper.
-Instead, we propose a way to think about the interaction techniques directly derived from the scenarios.
-In this section, we summarize the interaction methods that are part of our scenarios and discuss their applicability.
+Covering every possible interaction setup best suited for the scenarios is not the purpose of this paper, but rather how one could analyze the current ones by categorization them in different techniques which are utilized throughout the scenarios.
+In this section, we summarize the interaction techniques that can be derived from of our scenarios, and discuss their applicability.
 
 \subsection{Direct Touch Interaction}
 Direct interaction with an object in the scene gives the user a feel of control over the object~\cite{isenberg2009studying}. 
@@ -321,7 +320,7 @@ Instead, indirect techniques must be used, like laser pointers, rendered cursors
 \begin{figure}[htb]
 	\centering
 	\fbox{\includegraphics[width=1.0\linewidth]{images/dome_clip}}
-	\caption{Presentation on large scale surface using the kinect device as an interaction technique to interact with the visualization trought}
+	\caption{Presentation on large scale surface using the kinect device as an interaction technique to interact with the visualization trough hand gestures.}
 	\label{img:dome_clip}
 \end{figure}
 
@@ -337,10 +336,12 @@ Instead, indirect techniques must be used, like laser pointers, rendered cursors
     \subfigure[The ranges of applicability for our chosen scenarios]{
         \includegraphics[width=1.0\columnwidth]{expressivity.pdf}
         \label{scenario_diagram}
-    }	
+    }
+		\caption{Our proposed charts for showing the applicability of different interaction types in various environments.}
+		\label{our_charts}
 \end{figure*}
 
-\subsection{Touchless Interaction}
+\subsection{Touchless Interaction}\label{subsec:touchless}
 Touchless interaction is useful in situations such as surgery~\cite{Mentis:2012:IPI:2207676.2208536} where touching an interaction device is cumbersome or must be avoided due to hygienic constraints.
 Moving hands freely in the air allows expressive gestures without being restricted to 2D motion as in the case of direct touch interaction.
 However, recognizing the start and end point of a gesture can be difficult since there is no natural deactivation state \cite{Kirmizibayrak:2011:EGB:2087756.2087764}.
@@ -394,14 +395,13 @@ In a presentation aspect, this interaction could generally be perceived as very 
 
 \section{Classification} \label{sec:classification}
 
-To further show when a certain interaction technique is preferable from an expressiveness to audience point of view we introduce a classification of the techniques covered in our scenarios. The chart show the relevance of the technique in relation to audience and display size. It should be noted, that while a technique usage relevance is highly dependent on the scenarios and might be less suitable in when it comes to different scenarios.
+To further show when a certain interaction technique is preferable from an expressiveness to audience point of view we introduce a classification of the techniques covered in our scenarios. The chart in figure \ref{classifiy_diagram} show the relevance of the techniques in relation to audience and display size. As can be seen, we have chosen to split up the touchless interaction in our scenarios into \emph{registered} and \emph{unregistered} gestures, as previously detailed in section \ref{subsec:touchless}.
 
-%\begin{figure}
-%	\centering
-%	\includegraphics[width=1.0\linewidth]{expressivity.pdf}
-%	\caption{The ranges of applicability for our chosen scenarios}
-%	\label{scenario_diagram}
-%\end{figure}
+The conclusion which can be drawn from our mapping is that touch is suitable for interaction for small to medium display and audience sizes. 
+Furthermore, \emph{registered} gestures, where the user is basically almost in contact with the display surface....\todo{Why registered gestures good when small audience, large display?}, while \emph{unregistered} are suitable when the display area and audience size is large, as not all people from the audience would be able too see the user movements close to the display area at once, and there is just to large area for touch interaction.
+Voice could be suitable in most variations of display and audience sizes, however, we deem that interaction too be used when none other is suitable, as it can be considered less flexible then the other techniques.
+
+We also introduced the chart in figure \ref{scenario_diagram} to complement the chart in figure \ref{classifiy_diagram}, such that a mapping between our techniques and our scenarios could be performed by a side-by-side study of these charts.
 
 There are more advanced classification methods for interaction techniques \cite{stars:65-93:2012}, especially for 3D user interaction \cite{CGF:CGF194, Kettner95aclassification, 978-3-319-07458-0_1}, but there focus cover the usability for the actual user.
 
