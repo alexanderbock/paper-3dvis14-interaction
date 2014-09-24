@@ -189,19 +189,19 @@ Section~\ref{sec:classification} reevaluates the presented scenarios in the same
 %
 %
 \section{Scenarios} \label{sec:scenario}
-The scenarios described in this section are drawn from our experience in presenting scientific data to audiences of varying sizes.
+The scenarios described in this section are drawn from our experience in presenting scientific data to audiences of varying sizes and expertise.
 We do not claim to cover all possible presentation cases in this section, yet we selected a subset of scenarios that cover a large variety of situations.
 
 %
 %
 \subsection{Presentation on workstation} \label{sec:workstation}
-In this scenario, the presentation is performed on a small screen, either handheld or desktop monitor, and the audience usually consists of a single person or a small group.
-As this setup will be most familiar to readers, we keep the description of this section purposefully concise.
+In this scenario, the presentation is performed on a small screen, either handheld or a desktop monitor, and the audience usually consists of a single person or a small group.
+As this setup will be most familiar to readers, we keep the description of this section concise.
 The distance between the audience and the presenter is typically small and allows for a close communication.
 The audience can easily communicate preferences in what to explore and may, in some cases, even intervene with the presenter to interact with the visualization.
 An intuitive interaction can therefore engage the audience and create a more dynamic presentation.
 An example can be seen in figure~\ref{img:touch_workstation}, where the presenter uses a touch screen or touchpad to interact with a ultrasound scan of a fetus.
-The standard interaction mode is camera interaction, such as rotation, translation and zoom as single finger touch or multiple finger gestures.
+The standard interaction mode are camera interactions, such as rotation, translation and zoom as single finger touch or multiple finger gestures.
 The presenter can, in this case, switch to different modes, using the keyboard, to control other aspects of the visualization.
 For instance, another mode will change the interpretation of the single finger touch such that the threshold and opacity of the mapping between data and colors are changed according to the horizontal and vertical movement.
 
@@ -225,15 +225,15 @@ For instance, another mode will change the interpretation of the single finger t
 
 \subsection{Presentations in Exhibition Area} \label{sec:exhibition}
 In a public exhibition area, both small to medium sized displays are often utilized to showcase and explore scientific data.
-Furthermore, it is mostly targeted at non-expert users and viewers that interact and see others interact, which requires intuitive and natural input methods.
-There exist a wide range of setups with displays and gadgets for immersive and exploratory purposes which can be utilized in an exhibition area~\cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}.
-That fact, together with a reasonable level of functionality motivates the usage of a hands-only setup, either through direct touch~\cite{Klein:2012:DSD:2322389.2322403} or touchless methods~\cite{O'hara:2013:NTP:2442106.2442111}.
+It is mostly targeted at non-expert users and viewers that interact, and see others interact, which requires intuitive and natural input methods.
+There exist a wide range of setups with displays and gadgets for immersive and exploratory purposes that can be utilized in an exhibition area~\cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}.
+That fact, together with a reasonable level of functionality, motivates the usage of a hands-only setup, either through direct touch~\cite{Klein:2012:DSD:2322389.2322403} or touchless methods~\cite{O'hara:2013:NTP:2442106.2442111}.
 
 Figure~\ref{img:exhibition_table} shows an exhibition setup example, known as an virtual autopsy table~\cite{LRFPY11}, where data, such as a CT scan of a human, can be explored using direct touch and multi-touch gestures.
-Rotation and translation of the object is done via vertical and horizontal movements and zoom using a two-finger pinch gesture.
+Rotation and translation of the object is done via vertical and horizontal movements and zooming is performed with a two-finger pinch gesture.
 Various 2D icons are shown around the visualization for state switching and presenting relevant information about the data.
 Glyphs are used to change clipping and transparency levels within the visualization, which are also manipulated with a single finger touch.
-As high-resolution accurate touch screens are available today, this type of setup is very appreciated for both the user and the audience.
+As high-resolution accurate touch screens are available today, this type of setup is very appreciated for both the presenter and the audience.
 
 Though the table resembles an increased version of a handheld device, the usability for a bigger audience is much higher, as the area surrounding the table is significantly larger.
 However, the larger the touch display surface is, the more the presenter has to move, which puts size constraints on these devices.
@@ -249,8 +249,8 @@ However, interaction with touch displays is so widely applied that a gesture lan
 \end{figure}
 
 The setup in figure~\ref{img:exhibition_kinect} is in first approximation similar to figure~\ref{img:exhibition_table} in terms of exploring data in true scale.
-However, the display surface does not have without direct touch capabilities, but instead is controlled by tracking the movements of the presenter's hands.
-The visualization is also supported by state icons, which, in this case, allow the presenter to intuitively change the data set between four presets.
+However, the display surface does not have without direct touch capabilities, but is controlled by tracking the movements of the presenter's hands instead.
+The visualization is also supported by state icons, which in this case, allow the presenter to intuitively select the data set from a choice of four presets.
 A hand cursor is rendered onto the screen that mimics the movements of the presenter's right hand.
 The left hand is tracked and utilized to switch between different rendering states such as moving the camera or light source interaction.
 
@@ -262,8 +262,8 @@ The left hand is tracked and utilized to switch between different rendering stat
 \end{figure}
 
 \subsection{Scenario: Large Audience Presentation} \label{sec:largeaudience}
-Our display system in this scenario is a wide field-of-view hemispherical dome surface with seating for 99 audience members (see figures~\ref{img:dome_presentation} and ~\ref{img:dome_clip}).
-This is a similar setup to traditional planetariums, but in our case, the content is produced using an interactive rendering system.
+The display system in this scenario is a wide field-of-view hemispherical dome surface with seating for 99 audience members (see figures~\ref{img:dome_presentation} and~\ref{img:dome_clip}).
+This is a similar setup to traditional planetariums, but in this case, the content is produced using an interactive rendering system.
 
 \begin{figure}[htb]
 	\centering
@@ -272,18 +272,18 @@ This is a similar setup to traditional planetariums, but in our case, the conten
 	\label{img:dome_presentation}
 \end{figure}
 
-\noindent \textbf{Oral Presentation}, being the most traditional form of presentation techniques, has been around since time immemorial.
+Oral presentations, being the most traditional form of presentation techniques, have been around since time immemorial.
 While they were limited to a lecturer talking initially, tools and techniques have been added to improve this presentation mode.
 A prime example of an enhancement, in which the interaction technique matters a great deal, is medical schools' education based on the dissection of cadavers in class.
-Here, not only the presented content is important, but even more important is the way the lecturer interacts with the body.
+Here, not only the presented content is of interest, but even more important is the way the lecturer interacts with the body.
 A limitation to this technique is the fact that every audience member has to see the presenter and the visualization.
 We found that this simple restriction is present in many interaction techniques that we investigated, as being able to see and understand the movements and gestures of the presenter is important for the audiences' understanding.
 
-A slight variant to this is the concept of remote presentations.
+A slight variant to oral presentations is the concept of remote presentations.
 In this case, the presenter is not in the same room as the intended audience, but his voice (and possible video footage) is streamed instead.
-Regarding the interaction, there is no change as the presenter's interaction with the content was limited to communication and there was no physical input necessary.
+\todo{voice interaction comes out of nothing here (ab)} Regarding the interaction, there is no change as the presenter's interaction with the content was limited to communication and there was no physical input necessary.
 The only visible difference to the audience is the missing presence of the presenter in the same room, which might make other, complementary, sources of interaction impossible (such as using laser pointers).
-An increase in future presence technologies will presumably blur the line further between a physically-present presenter and a remote presenter.
+An increase in future presence technologies will eventually blur the line further between a physically-present presenter and a remote presenter.
 
 %The third setup is a curved-screen decision arena in which the audience members are located on the inside of a round room with the walls being used as projection surfaces.
 %This setup is very useful for a small group of people ($<$ 10 persons) to simultaneously work on decisions using the information projected on the surfaces.
