@@ -199,11 +199,13 @@ In this scenario, the presentation is performed on a small screen, either handhe
 As this setup will be most familiar to readers, we keep the description of this section concise.
 The distance between the audience and the presenter is typically small and allows for a close communication.
 The audience can easily communicate preferences in what to explore and may, in some cases, even intervene with the presenter to interact with the visualization.
+
 An intuitive interaction can therefore engage the audience and create a more dynamic presentation.
 An example can be seen in figure~\ref{img:touch_workstation}, where the presenter uses a touch screen or touchpad to interact with a ultrasound scan of a fetus.
 The standard interaction mode are camera interactions, such as rotation, translation and zoom as single finger touch or multiple finger gestures.
+For instance, another mode will change the interpretation of the single finger touch such that the threshold and opacity of the mapping between data and colors are changed according to the horizontal and vertical movement. 
 The presenter can, in this case, switch to different modes to control other aspects of the visualization.
-For instance, another mode will change the interpretation of the single finger touch such that the threshold and opacity of the mapping between data and colors are changed according to the horizontal and vertical movement.
+Furthermore, as the display size is only 15\,'', one hand finger gestures are sufficient for all interaction possibilities.
 
 %This scenario deals with small screens and 
 %User-centered...
@@ -233,26 +235,28 @@ Figure~\ref{img:exhibition_table} shows an exhibition setup example, known as th
 Rotation and translation of the object are done via vertical and horizontal movements, while zooming is performed with a two-finger pinch gesture.
 Various 2D icons are shown around the visualization for state switching and presenting relevant information about the data.
 Interaction-enabled glyphs are used to change clipping and transparency levels within the visualization, which are also manipulated with a single finger touch.
+
 Although the table works basically the same as a handheld device, it is more appropriate for a larger audience as the area surrounding the table increases the accessibility to both the interaction surface and the visualization. This type of setup has been appreciated by both the presenter and the audience due to intuitive interaction as well as the large display.
 %However, the larger the touch display surface is, the more the presenter has to move, which puts size constraints on these devices.
 
 %Limiting the interaction to touch gestures can be a challenge as there is a 2D input for a 3D environment.
 %However, interaction with touch displays is so widely adopted that a gesture language has been developed using common gestures such as pinch and swipe.
 
-\begin{figure}[htb]
+The setup in figure~\ref{img:exhibition_kinect} can at first impression seem similar to figure~\ref{img:exhibition_table} in terms of exploring data in true scale.
+However, the display surface does not have direct touch capabilities, but is controlled by tracking the movements of the presenter's hands instead.
+
+The visualization is supported by state icons, which allow the presenter to select a data set from a choice of four presets.
+A hand cursor is rendered onto the screen that mimics the movements of the presenter's right hand.
+The left hand is tracked and utilized to switch between different rendering states such as moving the camera or light source interaction.
+
+\begin{figure}[t]
 	\centering
 	\fbox{\includegraphics[width=1.0\linewidth]{images/exhib_table}}
 	\caption{A touch table (known as the Virtual Autopsy Table) for presentation of, for instance, CT scans that can be viewed in close to true scale.}
 	\label{img:exhibition_table}
 \end{figure}
 
-The setup in figure~\ref{img:exhibition_kinect} can at first impression seem similar to figure~\ref{img:exhibition_table} in terms of exploring data in true scale.
-However, the display surface does not have direct touch capabilities, but is controlled by tracking the movements of the presenter's hands instead.
-The visualization is supported by state icons, which allow the presenter to select a data set from a choice of four presets.
-A hand cursor is rendered onto the screen that mimics the movements of the presenter's right hand.
-The left hand is tracked and utilized to switch between different rendering states such as moving the camera or light source interaction.
-
-\begin{figure}[htb]
+\begin{figure}[b]
 	\centering
 	\fbox{\includegraphics[width=1.0\linewidth]{images/exhib_rotate_peng}}
 	\caption{Volume visualization of a CT scanned penguin displayed on a wall with a in-front projector and coupled with a kinect for 3D interaction possiblities.}
@@ -262,13 +266,6 @@ The left hand is tracked and utilized to switch between different rendering stat
 \subsection{Scenario: Large Audience Presentation} \label{sec:largeaudience}
 The display system in this scenario is a wide field-of-view hemispherical dome surface with seating for 99 audience members (see figures~\ref{img:dome_presentation} and~\ref{img:dome_clip}).
 This is a similar setup to traditional planetariums, but in this case, the content is produced using an interactive rendering system.
-
-\begin{figure}[htb]
-	\centering
-	\fbox{\includegraphics[width=\linewidth, height=165pt]{images/dome_oralpresentation}}
-	\caption{Presentation on large scale surface using the voice as an interaction technique to communicate intent rather than direct actions.}
-	\label{img:dome_presentation}
-\end{figure}
 
 Oral presentations, being the most traditional form of presentation techniques, have been around since time immemorial.
 While they were limited to a lecturer talking initially, tools and techniques have been added to improve this presentation mode.
@@ -308,6 +305,13 @@ An increase in future presence technologies will eventually blur the line furthe
 %	\caption{Dome Closeup}
 %	\label{img:dome_tf_change}
 %\end{figure}
+
+\begin{figure}[t]
+	\centering
+	\fbox{\includegraphics[width=\linewidth, height=165pt]{images/dome_oralpresentation}}
+	\caption{Presentation on large scale surface using the voice as an interaction technique to communicate intent rather than direct actions.}
+	\label{img:dome_presentation}
+\end{figure}
 
 \section{Interaction techniques from the scenarios} \label{sec:techniques}
 The purpose of this paper is not to cover every possible interaction setup best suited for the scenarios, but rather to analyze the current ones and categorize them in different groups that are utilized throughout the scenarios.
