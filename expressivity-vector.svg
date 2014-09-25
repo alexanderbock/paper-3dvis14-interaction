@@ -10,7 +10,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="821.4472"
+   width="850.17188"
    height="561.55023"
    id="svg2"
    version="1.1"
@@ -18,6 +18,21 @@
    sodipodi:docname="expressivity-vector.svg">
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient4240">
+      <stop
+         id="stop4242"
+         offset="0"
+         style="stop-color:#ee8a40;stop-opacity:0.71681416;" />
+      <stop
+         style="stop-color:#ee8a40;stop-opacity:0.54867256;"
+         offset="0.75420099"
+         id="stop4244" />
+      <stop
+         id="stop4246"
+         offset="1"
+         style="stop-color:#ee8a40;stop-opacity:0;" />
+    </linearGradient>
     <linearGradient
        id="linearGradient4766">
       <stop
@@ -43,9 +58,9 @@
     <linearGradient
        id="linearGradient4740">
       <stop
-         style="stop-color:#2795ad;stop-opacity:1;"
+         id="stop4238"
          offset="0"
-         id="stop4742" />
+         style="stop-color:#179fbd;stop-opacity:1;" />
       <stop
          style="stop-color:#2795ad;stop-opacity:0;"
          offset="1"
@@ -313,18 +328,18 @@
        fx="9.3408241"
        fy="1065.4824"
        r="212.27246"
-       gradientTransform="matrix(1.2181083,0,4.1197191e-8,1.8727911,-1.6276511,-954.87214)"
+       gradientTransform="matrix(2.0189658,0.00471093,-0.00436977,1.872786,-4.4523617,-954.91071)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4756"
        id="radialGradient4762"
-       cx="382.7738"
-       cy="273.91605"
-       fx="382.7738"
-       fy="273.91605"
+       cx="381.70801"
+       cy="315.54593"
+       fx="381.70801"
+       fy="315.54593"
        r="143.5"
-       gradientTransform="matrix(0.78786657,-1.4401013e-4,2.3063152e-7,2.3291526,-53.391416,196.09419)"
+       gradientTransform="matrix(0.78786657,-1.0302045e-4,0,1.66719,-54.55165,379.99568)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -337,6 +352,43 @@
        r="199.5"
        gradientTransform="matrix(-3.2647536,-2.0540174e-8,0,-1.2366027,2311.8647,611.87314)"
        gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4756-7"
+       id="radialGradient4762-1"
+       cx="382.7738"
+       cy="273.91605"
+       fx="382.7738"
+       fy="273.91605"
+       r="143.5"
+       gradientTransform="matrix(0.78786657,-1.4401013e-4,2.3063152e-7,2.3291526,-53.391416,196.09419)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4756-7">
+      <stop
+         style="stop-color:#ee8a40;stop-opacity:0.85840708;"
+         offset="0"
+         id="stop4758-4" />
+      <stop
+         id="stop4236"
+         offset="0.5"
+         style="stop-color:#ee8a40;stop-opacity:0.94690263;" />
+      <stop
+         style="stop-color:#ee8a40;stop-opacity:0;"
+         offset="1"
+         id="stop4760-0" />
+    </linearGradient>
+    <radialGradient
+       r="143.5"
+       fy="417.2832"
+       fx="350.21292"
+       cy="417.2832"
+       cx="350.21292"
+       gradientTransform="matrix(0.5491781,0.84448053,-1.4411385,0.33973913,476.64653,587.04799)"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient4211"
+       xlink:href="#linearGradient4240"
+       inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -346,8 +398,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="69.37994"
-     inkscape:cy="246.17047"
+     inkscape:cx="353.80633"
+     inkscape:cy="247.87348"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -383,6 +435,14 @@
        id="path5185"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssss" />
+    <rect
+       style="fill:url(#radialGradient4211);fill-opacity:1;stroke:none"
+       id="rect4754-9"
+       width="417"
+       height="144"
+       x="9.14013"
+       y="898.76831"
+       ry="0" />
     <path
        sodipodi:type="arc"
        style="stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
@@ -537,11 +597,6 @@
        clip-rule="evenodd"
        inkscape:connector-curvature="0"
        style="fill:#010101;fill-rule:evenodd" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)"
-       d="m 9.6809645,542.12648 0,500.63162 500.6316055,0"
-       id="path3017"
-       inkscape:connector-curvature="0" />
     <image
        y="996.63916"
        x="-51.716446"
@@ -584,7 +639,7 @@
          x="561.26331"
          y="857.09937"
          id="tspan5374"
-         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;font-family:Segoe UI;-inkscape-font-specification:Segoe UI">Large Audience</tspan></text>
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;text-anchor:start;font-family:Segoe UI;-inkscape-font-specification:Segoe UI">Auditorium</tspan></text>
     <rect
        style="fill:url(#radialGradient4762);fill-opacity:1;stroke:none"
        id="rect4754"
@@ -620,5 +675,10 @@
        height="373"
        x="7.3723626"
        y="559.94415" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)"
+       d="m 9.6809645,542.12648 0,500.63162 500.6316055,0"
+       id="path3017"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
