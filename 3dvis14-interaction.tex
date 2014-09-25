@@ -158,12 +158,17 @@ We argue that by taking these considerations into account interaction techniques
 \maketitle
 
 \section{Introduction}\label{sec:introduction}
+Oral presentations, being the most traditional form of presentation techniques, have been around since time immemorial.
+While they were limited to a lecturer talking initially, tools and techniques have been added to improve the presentation.
+A prime example of an enhancement, which shows that the interaction technique matters a great deal, is medical schools' education based on the dissection of cadavers in class.
+Here, not only the presented content is of interest, but also the way the lecturer interacts with the cadaver.
+
 In recent years, different types of interaction have become increasingly common in visualization due to the introduction of low-cost interaction devices.
-This changes the paradigm that a mouse and keyboard are used as the main type of interaction in all kinds of scenarios.
+This changes the paradigm that a mouse and keyboard are used as the main type of interaction in all kinds of scenarios and allows us to analyze how they affect a presentation.
 Touch screens are now the de-facto standard for handheld devices, while low-cost solutions for touchless interaction, such as the Kinect or Leap Motion, have inspired a range of applications within interactive visualization \cite{zora82163, Jalaliniya:2013:TIM:2494091.2497332, OHaraGSPVMCCRDC14, 0724-4983}.
 Much focus in research has been placed on the user's interaction expertise to determine if a type of interaction is suitable for a certain scenario \cite{DBLP:journals/tvcg/YiKSJ07}.
 Yet, there has not been much attention on the fact that the type of interaction is also part of the presentation and therefore affects the audience.
-If the audience can infer what will happen by witnessing the interaction, it can have a significant impact on their understanding of the presentation.
+As exemplified in the dissection example, if the audience can infer what will happen by witnessing the interaction, the type of interaction can have a significant impact on their understanding of the presentation.
 
 We can draw an analogy to the field of visualization, which generally separates the use of visualization into exploration, analysis and presentation steps, applying different approaches, tools and techniques for each step.
 While the exploration phase requires a flexible interaction method, the presentation phase is usually limited to a few predetermined parameters.
@@ -263,26 +268,25 @@ The left hand is tracked and utilized to switch between different rendering stat
 	\label{img:exhibition_kinect}
 \end{figure}
 
-\subsection{Scenario: Large Audience Presentation} \label{sec:largeaudience}
-The display system in this scenario is a wide field-of-view hemispherical dome surface with seating for 99 audience members (see figures~\ref{img:dome_presentation} and~\ref{img:dome_clip}).
-This is a similar setup to traditional planetariums, but in this case, the content is produced using an interactive rendering system.
+\subsection{Auditorium} \label{sec:largeaudience}
+A common scenario is when the presenter is standing in front of a seated, or otherwise stationary, audience. 
+The audience is typically large, ranging from tens to hundreds of people.
+The display system we used in this scenario is a wide field-of-view hemispherical dome surface with seating for 99 audience members (see figures~\ref{img:dome_presentation} and~\ref{img:dome_clip}).
+The dome theater is similar to traditional planetariums, but in this case the content is produced using an interactive rendering system.
+Due to the size of the screen, and large difference in seating location, it can be difficult for parts of the audience see both the visualization and the presenter at the same time. 
+In addition to this, small movements may be hard to see for the audience in the back seats. 
 
-Oral presentations, being the most traditional form of presentation techniques, have been around since time immemorial.
-While they were limited to a lecturer talking initially, tools and techniques have been added to improve this presentation mode.
-A prime example of an enhancement, in which the interaction technique matters a great deal, is medical schools' education based on the dissection of cadavers in class.
-Here, not only the presented content is of interest, but even more important is the way the lecturer interacts with the cadaver.
-A limitation to this technique is the fact that every audience member has to see the presenter and the visualization.
-We found that this simple restriction is present in many interaction techniques that we investigated, as being able to see and understand the movements and gestures of the presenter is important for the audiences' understanding.
-
-In this scenario a presenter is showing interactive scientific data to a big audience.
-The main interaction technique used by the presenter in this setup is talking to an operator which, in turn, directly controls the visualization.
+The main interaction technique used by the presenter in practice is talking to an operator which, in turn, directly controls the visualization.
 From the point of view of the audience the operator is completely transparent and the interaction ends with the presenter verbally giving commands.
+We have also made experiments with touchless interaction, where gestures are recognized by finger and hand movements, as seen in~\cref{img:dome_clip}.
+Here, movements are designed to reflect the operations performed on the screen. For instance, moving a clip plane towards and away from the camera is done by moving the hands towards and away from the presenter. 
+Another experiment include a touch screen on the stage with which the presenter interacts with and the resulting visualization is projected onto the dome surface. 
 
-A slight variant to oral presentations is the concept of remote presentations.
-In this case, the presenter is not in the same room as the intended audience, but the voice (and possible video footage) is streamed instead.
-Regarding the interaction there is no difference as the presenter's interaction with the content is limited to communication and there is no physical input necessary.
-The only visible difference to the audience is the missing presence of the presenter in the same room, which might make other, complementary, sources of interaction impossible (such as using laser pointers).
-An increase in future presence technologies will eventually blur the line further between a physically-present presenter and a remote presenter.
+%A slight variant to oral presentations is the concept of remote presentations.
+%In this case, the presenter is not in the same room as the intended audience, but the voice (and possible video footage) is streamed instead.
+%Regarding the interaction there is no difference as the presenter's interaction with the content is limited to communication and there is no physical input necessary.
+%The only visible difference to the audience is the missing presence of the presenter in the same room, which might make other, complementary, sources of interaction impossible (such as using laser pointers).
+%An increase in future presence technologies will eventually blur the line further between a physically-present presenter and a remote presenter.
 
 %The third setup is a curved-screen decision arena in which the audience members are located on the inside of a round room with the walls being used as projection surfaces.
 %This setup is very useful for a small group of people ($<$ 10 persons) to simultaneously work on decisions using the information projected on the surfaces.
