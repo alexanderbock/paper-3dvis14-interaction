@@ -1,0 +1,26 @@
+----------------------- REVIEW 1 ---------------------
+
+Typos:
+- “This change the fact that” in intro (actually whole sentence is awkward)
+- section 4: the presenters >> the presenter’s
+- section 4: “interaction techniques that involves” >> involve
+
+----------------------- REVIEW 2 ---------------------
+
+
+----------------------- REVIEW 3 ---------------------
+
+Low-level points:
+o Misspelled word: perceptive -> perspective 
+o Please use proper range dashes (n-dash without leading or trailing spaces: 1--10).
+o At the start of the abstract there should not be a space between the dash and the first word of the abstract. Please remove any unintentional newline or space character before the first word of the abstract.
+o Several issues in the sentence "This change the fact that mouse and keyboard is not the paradigm used as the main type of interaction in all kinds of scenarios and allows us to analyze how interactions affect a presentation."
+o Consistently capitalize "Scenario 2.3".
+o list of references: "Etats-Unis" is French
+
+References and citing:
+o Please sort references according to their numeric order, e.g., "[21, 7, 1, 32]" -> "[1, 7, 21, 32]"
+o Author is misspelled in the list of references: K. O'Hara
+o Proper names of people or systems or other named entities as well as most acronyms need to be capitalized in paper titles: 3D, 2D, NUI, VR, WIM 
+
+----------------------- REVIEW 4 ---------------------

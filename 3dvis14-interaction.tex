@@ -40,6 +40,7 @@
 \usepackage{subfigure}
 \usepackage[noabbrev]{cleveref}
 \usepackage{color}
+\usepackage{microtype}
 %\usepackage[caption=false]{subfig}
 \setlength{\fboxsep}{0pt}
 \newcommand{\todo}[1]{\textbf{\textcolor{red}{[TODO: {#1}]}}}
@@ -111,14 +112,13 @@
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
-\abstract{ 
-In this position paper we discuss the usage of various interaction technologies with focus on the presentations of 3D visualizations involving a presenter and an audience. While an interaction technique is commonly evaluated from a user perceptive, we want to shift the focus from a sole analysis of the naturalness and the ease-of-use for the user, to focus on how expressive and understandable the interaction technique is when witnessed by the audience.
+\abstract{In this position paper we discuss the usage of various interaction technologies with focus on the presentations of 3D visualizations involving a presenter and an audience. While an interaction technique is commonly evaluated from a user perspective, we want to shift the focus from a sole analysis of the naturalness and the ease-of-use for the user, to focus on how expressive and understandable the interaction technique is when witnessed by the audience.
 The interaction process itself can be considered to be a communication channel and a more expressive interaction technique might make it easier for the audience to comprehend the presentation.
 Thus, while some natural interaction techniques for interactive visualization are easy to perform by the presenter, they may be less beneficial when interacting with the visualization in front of (and for) an audience.
 %We would, for instance, consider a gesture performed in mid air as more expressive then the usage of a conventional pointing device such as the mouse.
 Our observations indicate that the suitability of an interaction technique as a communication channel is highly dependent on the setting in which the interaction takes place.
 Therefore, we analyze different presentation scenarios in an exemplary fashion and discuss how beneficial and comprehensive the involved techniques are for the audience.
-We argue that interaction techniques complement the visualization in an interactive presentation scenario as they also serve as an important communication channel, and should therefore also be observed from an audience perceptive rather than exclusively a user perspective. 
+We argue that interaction techniques complement the visualization in an interactive presentation scenario as they also serve as an important communication channel, and should therefore also be observed from an audience perspective rather than exclusively a user perspective. 
 } % end of abstract
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
@@ -162,7 +162,7 @@ A prime example of an enhancement, which shows that interaction techniques matte
 Here, not only the presented content is of interest but also the way the lecturer interacts with the cadaver.
 
 In recent years, different types of interaction have become increasingly common when presenting visualizations due to the introduction of low-cost interaction devices.
-This change the fact that mouse and keyboard is not the paradigm used as the main type of interaction in all kinds of scenarios and allows us to analyze how interactions affect a presentation.
+The variety in the interaction techniques allows us to analyze how interactions, other then mouse and keyboard, affect a presentation.
 Touch screens are now the de-facto standard for handheld devices, supporting multi-touch interfaces for 2D gestures such as pinch or swipe, while low-cost solutions for touchless interaction, such as the Kinect or Leap Motion, even support 3D whole-body interaction interfaces \cite{978-0-85729-432-6, Shoemaker:2010:BIT:1868914.1868967}. 
 These interaction interfaces have inspired a range of applications within interactive visualization~\cite{zora82163, Jalaliniya:2013:TIM:2494091.2497332, OHaraGSPVMCCRDC14, 0724-4983}.
 The focus in research has been placed on the user's interaction expertise to determine if a type of interaction is suitable for a certain scenario within interactive visualization~\cite{5693835, so64840, DBLP:journals/tvcg/YiKSJ07}.
@@ -175,7 +175,7 @@ The interface designer controls what can be viewed and, thus, makes the visualiz
 The distinction between interaction techniques used for exploration as compared to presentation has, to our knowledge, not been considered and we will focus on interaction techniques for presentation purposes in the presence of a, possibly non-expert, audience.
 
 Important parameters for measuring \emph{"good"} interaction techniques, with regard to communication with people, are how expressive~\cite{Brewster:2009:MIE:2227763.2227769} and natural~\cite{O'hara:2013:NTP:2442106.2442111} the gestures and speech are.
-While many studies focus on analyzing these aspects for interaction by user or group of users~\cite{978-3-642-12552-2, Caridakis:2013:NIE:2504335.2504378}, we argue that they also play a significant role when observed by the audience during the presenters interaction with a visualization which happens in front of, and for, the audience.
+While many studies focus on analyzing these aspects for interaction by user or group of users~\cite{978-3-642-12552-2, Caridakis:2013:NIE:2504335.2504378}, we argue that they also play a significant role when observed by the audience during the presenter's interaction with a visualization which happens in front of, and for, the audience.
 Apart from controlling a visualization, the expressivity and naturalness of gestures also influence the knowledge transfer from the presenter to the audience. Thus, a 3D user interaction interface might be more preferable then a 2D user interaction interface, even if the 3D interface is more complex for the user, as it might be more expressive and natural for the audience to perceive.
 
 We argue that the suitability and expressivity of a specific interaction method depends significantly on the screen sizes and the audience sizes.
@@ -236,7 +236,7 @@ The presenter can, in this case, switch to different modes to control other aspe
 \subsection{Presentations in Exhibition Area} \label{sec:exhibition}
 In a public exhibition area, both small to medium sized displays are often utilized to showcase and explore scientific data.
 It is mostly targeted at non-expert users and viewers that interact, and see others interact, which requires intuitive and natural input methods.
-There exist a wide range of setups with displays and gadgets for immersive and exploratory purposes that can be utilized in an exhibition area~\cite{Laha:2013:VCB:2491367.2491368, conf/egve/KruszynskiL08}.
+There exist a wide range of setups with displays and gadgets for immersive and exploratory purposes that can be utilized in an exhibition area~\cite{conf/egve/KruszynskiL08, Laha:2013:VCB:2491367.2491368}.
 That fact, together with a reasonable level of functionality, motivates the usage of a hands-only setup either through direct touch~\cite{Klein:2012:DSD:2322389.2322403} or touchless methods~\cite{O'hara:2013:NTP:2442106.2442111}.
 
 Figure~\ref{img:exhibition_table} shows an exhibition setup example, known as the virtual autopsy table~\cite{LRFPY11}, where data, such as a CT scan of a human, can be explored using multi-touch gestures.
@@ -260,7 +260,7 @@ The left hand is tracked and utilized to switch between different rendering stat
 \begin{figure}[tb]
 	\centering
 	\fbox{\includegraphics[width=1.0\linewidth]{images/exhib_rotate_peng}}
-	\caption{Volume visualization of a CT scanned penguin displayed on a wall with a in-front projector and coupled with a kinect for 3D interaction possiblities.}
+	\caption{Volume visualization of a CT scanned penguin displayed on a wall with a in-front projector and coupled with a Kinect for 3D interaction possibilities.}
 	\label{img:exhibition_kinect}
 \end{figure}
 
@@ -322,7 +322,7 @@ Direct interaction with an object in the scene gives the user a feel of control 
 The user touches the screen and the 2D motion is mapped to a 3D manipulation of the object, for instance by mimicking the interaction of a trackball.
 In scientific visualization, touch interaction has not received much attention in the past \cite{isenberg:hal-00781512}, but more work is starting to appear~\cite{Klein:2012:DSD:2322389.2322403} and it has already been used in applications~\cite{LRFPY11}.
 This type of interaction is present in Scenarios \ref{sec:workstation} and \ref{sec:exhibition}, where differently sized touch screens are utilized. 
-When analyzing this interaction technique from a presentation perspective, the audience can see the movements of the presenters' hands and fingers and, through that, get an understanding of what will happen on the display device.
+When analyzing this interaction technique from a presentation perspective, the audience can see the movements of the presenter's hands and fingers and, through that, get an understanding of what will happen on the display device.
 Furthermore, there is little distance between the interaction plane and the display surface and, thus, spatially correlated interaction events are well perceived.
 However, the presenter hides part of the screen due to the occluding hands and arms.
 Thus, when the audience grows larger it becomes harder for every audience member to see the gestures.
@@ -333,7 +333,7 @@ Instead, indirect techniques must be used such as laser pointers, rendered curso
 \begin{figure}[htb]
 	\centering
 	\fbox{\includegraphics[width=1.0\linewidth]{images/dome_clip}}
-	\caption{Presentation on large scale surface using the kinect device as an interaction technique to interact with the visualization trough hand gestures.}
+	\caption{Presentation on large scale surface using the Kinect device as an interaction technique to interact with the visualization trough hand gestures.}
 	\label{img:dome_clip}
 \end{figure}
 
@@ -361,14 +361,17 @@ However, recognizing the start and end point of a gesture can be difficult since
 Furthermore, the presenter might feel less in control of the data, even neglecting the accuracy of the tracking, as the person is not directly touching the display surface.
 However, the movements are often expressive and can therefore be seen more clearly by the audience during a presentation.
 
-Our Scenario~\ref{sec:exhibition} includes both a direct touch and a touchless setup, and both setups have been used interactively when presenting scientific data for the same group, usually consisting of around 10-20 people.
+Our Scenario~\ref{sec:exhibition} includes both a direct touch and a touchless setup, and both setups have been used interactively when presenting scientific data for the same group, usually consisting of around 10--20 people.
 The touchless setup can support a larger audience due the placement of the display surface, but has the downside of a decoupled interaction experience, where the interaction is performed farther away from the display surface.
 
 As we evaluate the interaction from an presentation perspective and how the audience perceive it, we have divided touchless interactions into two categories; registered and unregistered gestures.
 We refer to an \emph{unregistered gesture} when the audience sees that the presenter is performing interactions that are clearly decoupled from the display. 
-A \emph{registered gesture} could be touchless if the audience perceives it as performed in correlation of the display surface, such as interactions close to a wall-sized displays, as detailed in~\cite{Bezerianos:2007:DSU:1467769}, which is also the fact with all gestures on a touch screen. 
-For instance, a few number of people standing behind the presenter can see the presenters hands and how they are projected on the display, even if the presenter is standing far away from the display.
+A \emph{registered gesture} could be touchless if the audience perceives it as performed in correlation of the display surface, such as interactions close to a wall-sized displays, as detailed in~\cite{Bezerianos:2007:DSU:1467769}, which is also the fact with all gestures on a touch screen.
+For instance, a few number of people standing behind the presenter can see the presenter's hands and how they are projected on the display, even if the presenter is standing far away from the display.
 Thus, when utilizing the correlation between the hand positions and the display, they are registered gestures even if there is a touchless setup.
+
+\todo{Write text abiut Benko's \cite{Benko:2010:MII:1936652.1936657} Pinch the Dome setup.}
+
 With this distinction in mind, most of the audience in the touchless setup in Scenario~\ref{sec:exhibition} will see the gestures performed by the presenter as unregistered gestures, while only a few might look upon it as registered gestures.
 In a presentation sense, we prefer registered gestures over unregistered gestures, as the audience may benefit from interaction which is closely correlated with the content.
  
@@ -418,7 +421,7 @@ Figure~\ref{classifiy_diagram} shows where the techniques are applicable in rela
 We chose to split up the touchless interaction in our scenarios into registered and unregistered gestures, as previously detailed in Section \ref{subsec:touchless}.
 
 The conclusion which can be drawn from our mapping is that in our scenarios, direct touch is utilized for interaction using small to medium-sized displays with a small to medium-sized audience. 
-Furthermore, registered gestures, where the presenters interaction is correlated with the visualization and the display, are utilized for all display sizes, but only for an audience of very few people.
+Furthermore, registered gestures, where the presenter's interaction is correlated with the visualization and the display, are utilized for all display sizes, but only for an audience of very few people.
 Unregistered gestures are utilized when the display area and audience size is large, as not all people from the audience would be able to see the presenter's interaction, or when the display surface is too large for close interaction.
 Voice control could be used in most variations of display and audience sizes. However, we reckon that this interaction might be most preferable when no other technique is suitable since current technology does not allow enough complex and flexible interaction.
 
@@ -427,14 +430,14 @@ be performed using a side-by-side comparison.
 
 Our classifications are introduced with the purpose of not only showing the status quo, but also for supporting the selection of interaction techniques for future presentation scenarios, with the use of parameters such as audience size and display.
 
-There are more advanced classification methods for interaction techniques~\cite{stars:65-93:2012}, especially for 3D user interaction~\cite{978-3-319-07458-0_1, CGF:CGF194, Kettner95aclassification}, but the focus of these classifications is on the usability from a user perceptive only, rather than the applicability in presentation scenarios.
+There are more advanced classification methods for interaction techniques~\cite{stars:65-93:2012}, especially for 3D user interaction~\cite{978-3-319-07458-0_1, CGF:CGF194, Kettner95aclassification}, but the focus of these classifications is on the usability from a user perspective only, rather than the applicability in presentation scenarios.
 
 \section{Conclusions}\label{sec:conclusion}
 
 In this paper we share our thoughts, observations and experiences about interaction techniques in visualization from an audience-centric view, rather than the more common user-centric exploratory way of designing and evaluating appropriate interaction methods.
 
 In the previous sections, we described presentation scenarios that require interaction and we examined the types of interaction utilized today, such as 2D/3D user interfaces and voice.
-Although it would be interesting to include interaction techniques that involves hand-held devices it was not the focus in this work.
+Although it would be interesting to include interaction techniques that involve hand-held devices it was not the focus in this work.
 In the same aspect not all scenarios where interaction might be suitable is covered.
 Such an evaluation would be extensive and beyond the scope of a position paper.
 Furthermore, new types of interaction techniques and usage scenarios can be put into context using Figure~\ref{our_charts}, thereby giving initial directions on suitable combinations of new interaction techniques and scenarios.
@@ -443,7 +446,7 @@ We deem that research within audience-centered interaction techniques should rec
 We strongly encourage researchers developing 2D and 3D user interaction interfaces to include this aspect when evaluating previous and future techniques.
 Within this subject, expert and non-expert viewers have different experiences with scientific data and interaction techniques. Thus, the naturalness of the interaction could therefore be completely different for various group of viewers.
 
-\section*{Acknowledgements}We would like to extend our gratitude to the people working with research, management and content creation for the Visualization Center C in Norrk\"oping, Sweden. Without the public exhibition and the focus on interactive visualization, our views presented in this paper would have been of much less significance for us, and might not have emerged at all.
+\section*{Acknowledgements}We would like to extend our gratitude to the people working with research, management and content creation for the Visualization Center C in Norrk\"oping, Sweden. Without the public exhibition/presentations and the focus on interactive visualization, our views presented in this paper would have been of much less significance for us, and might not have emerged at all.
 
 \bibliographystyle{abbrv}
 %%use following if all content of bibtex file should be shown
