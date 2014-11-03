@@ -10,35 +10,6 @@ It could have been interesting to discuss a few combinations of various interact
 
 ----------------------- REVIEW 3 ---------------------
 
-The authors discuss different presentation scenarios of visualizations using a variety of interaction means.
-
-Related work:
-o it may be useful to also cite a survey on the use of interactive surfaces for visualization: P. Isenberg & T. Isenberg. Visualization on Interactive Surfaces: A Research Overview. i-com, 12(3):10–17, 2013. (doi: 10.1524/icom.2013.0020) o for a nice combination of ideas from touchless interaction and direct-touch control see H. Benko & A. D. Wilson. Multi-Point Interactions with Immersive Omnidirectional Visualizations in a Dome. In Proc. ITS, p. 19--28, 2010. (doi: 10.1145/1936652.1936657)
-
-With respect to touch interaction, I know from own experience of visiting other labs that it is also explored in the context of auditorium presentations, even if not many publications exist yet. Of course, the authors are correct about the challenges of presenting visualizations by means of touch interaction to larger audiences. Nevertheless, it is not always true that "both the audience and the presenter are at a physical distance from the projection surface"---sometimes the presenter can be in close proximity to the presentation screen and thus control it using touch.
-
-With respect to touchless interaction, see Benko and Wilson's [2010] paper for an example of registered gestures that are performed far from the projection screen. This paper is also a nice example of physically creating a proxy that visualizes the interaction input.
-
-Section 4 now contains the actual contribution: a classification of when each interaction platform is applicable (based on audience size and screen size) and when each scenario is applicable (also based on audience size and screen size). Unfortunately, the authors do not explain how they derived these mappings and why there should be an exclusive mapping as suggested by Figure 6. Are these observations? Are these recommendations? If the latter, based on what reasoning? Moreover, based on my observations reported above I think that the mapping, in particular in Figure 6(a), is not entirely correct (is not the only truth). I believe that the obvious lack of discussion is a major shortcoming of the submission, as the discussion when each platform and scenario works and why seems to the core of the authors' contribution.
-
-If the authors can extend Section 4 to explain their reasoning then I would be inclined to rate this position paper favorably, currently I am neutral with a tendency toward the negative. 
-
 Low-level points:
 o The use of commas should be revisited, for example by getting help from a a native/fluent speaker of English or by consulting style guide.
 o Please use proper quotation marks (66quoted text99), single quotation marks (6quoted text9), and apostrophes (Smith9s paper).
-
-References and citing:
-o The abbreviation of journal names or the proceedings book titles is inconsistent, some are abbreviated, others are not abbreviated.
-o The name of journals/proceedings in the list of references uses reversed forms such as "Visualization and Computer Graphics, IEEE Transactions on". Please correct these to the proper names (i.e., "IEEE Transactions on Visualization and Computer Graphics"); generally not blindly believe the bibliographic entries from digital libraries.
-
-Some recommendations to gain space:
-o Space can easily be gained by shortening proceedings names into "Proc. SIGGRAPH"/"Proc. CHI"/"Proc. PacificVis" or similar, also removing the editions/dates/locations of the respective conferences where present in the proceedings (booktitle) name.
-o For each entry in the list of references it is only necessary to mention the year once. For example, it is not necessary to refer to "Proc. CONF 2010" if the entry again list 2010 as the year the paper was published---in this case simply refer to "Proc. CONF".
-o Space can easily be gained by removing long forms of well-known cities. For example, it can probably safely be assumed that most people know (or can figure out) that New York is in the State of New York which again is located in the United States.
-o Space can sometimes also be gained by employing microtypography in the typesetting (which also makes texts easier to read). In LaTeX this can easily be achieved by using either "\usepackage{microtype}" or "\usepackage[activate=normal]{pdfcprot}" in the praeamble.
-o Space can easily be gained by re-wording sentences in those paragraphs that end with a single word or two on the last line (orphans).
-
-
------------------------ REVIEW 4 ---------------------
-
-My main critique is that the authors could have stressed that their analysis is based on current practices and that (many) studies will be necessary to disentangle the complex relationships between the involved mentioned factors as well as additional ones, such as the complexity of an operation and the interaction technique used to perform it, or how different interaction techniques might affect memorability of insights.
